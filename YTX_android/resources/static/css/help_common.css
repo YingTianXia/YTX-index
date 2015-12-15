@@ -1,0 +1,166 @@
+.main-title{
+	padding:0 3%;
+	border-bottom:1px solid #DBDBDB;
+	background:#fff;
+	font-size:0;
+	position:relative;
+	line-height:74px;
+}
+.main-title-icon,.main-title-text{
+	display:inline-block;
+	vertical-align:middle;
+}
+.main-title-icon{
+	width:42px;
+}
+.main-title-text{
+	font-size:20px;
+	padding-left:14px;
+	font-weight:bold;
+}
+.main-title-arrow{
+	position:absolute;
+	width:16px;
+	height:10px;
+	bottom:-2px;
+	display:block;
+	background:url(../images/arrow_1.png) no-repeat 0 0;
+	background-size:100%;
+	left:13%;
+}
+.main-content{
+	background:#fff;
+	padding:0 3%;
+	border-bottom:1px solid #DBDBDB;
+}
+.main-content-title{
+	color:#FD9500;
+	font-size:16px;
+	padding:16px 0;
+}
+.main-content-descCon{
+	width:3%;
+	line-height:22px;
+}
+.main-content-descCon,.main-content-text{
+	float:left;
+}
+.main-content-desc{
+	display:inline-block;
+	vertical-align:middle;
+	width:6px;
+	height:6px;
+	-webkit-transform: rotate(45deg);
+	background:#666;
+}
+.main-content-text{
+	width:97%;
+}
+.main-content-paragraph{
+	font-size:14px;
+	line-height:24px;
+	word-wrap:break-word;
+	color:#666;
+}
+.paragraph{
+	padding-bottom:10px;
+}
+.steps{
+	overflow:hidden;
+	padding-top:10px;
+}
+.step-text,.step-arrow{
+	float:left;
+}
+.step-text{
+	width:42px;
+	font-size:14px;
+	letter-spacing:6px;
+	line-height:20px;
+	height:42px;
+	border:1px solid #333;
+	text-align:center;
+	padding:4px 0 1px 5px;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+}
+.step-arrow{
+	width:9px;
+	height:16px;
+	background:url(../images/arrow_2.png) no-repeat 0 0;
+	background-size:100%;
+	margin:17px 10px 0 10px;
+}
+.bottomLine{
+	border-bottom:1px solid #DBDBDB;
+	padding-bottom:20px;
+}
+.guaranteeMain{
+	padding-top:10px;
+}
+.main-image-content{
+	width:75%;
+	margin:0 auto 20px auto;
+}
+.credits-table-content{
+	width:90%;
+	margin:0 auto;
+	padding-bottom:10px;
+}
+.credits-table{
+	width:100%;
+}
+.credits-thead{
+	background:#000;
+}
+.credits-th,.alipay-th{
+	width:34%;
+	color:#fff;
+	font-weight:normal;
+	line-height:32px;
+	font-size:13px;
+	border:1px solid #000;
+}
+.credits-td,.alipay-td{
+	width:34%;
+	line-height:32px;
+	font-size:14px;
+	text-align:center;
+	border:1px solid #000;
+}
+.wechat-image{
+	padding-top:30px;
+}
+.alipay-table-content{
+	width:90%;
+	margin:0 auto;
+	padding-bottom:10px;
+}
+.alipay-table{
+	width:100%;
+}
+.alipay-thead{
+	background:#000;
+}
+.firstTh{
+	width:30%;
+}
+.lastTh{
+	width:70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
+<title>迎天下-'商品名'</title>
+<link rel="stylesheet" type="text/css" href="../../static/css/style.css"/>
+</head>
+<body>
+<div class="main-container">
+	<div class="site-nav-content">
+		<div class="site-nav clearfix">
+			<div class="login-info">
+				<a href="#" class="sn-user">Hi,<span>User123123</span></a>
+				<a href="#" class="sn-mes">消息<b class="sn-mes-num">0</b></a>
+				<a href="#" class="sn-logout">退出</a>
+			</div>
+			<div class="quick-menu">
+				<a href="#" class="sm-quick-link">我关注的品牌</a>
+				<a href="#" class="sm-quick-link">我的订单</a>
+				<a href="#" class="sm-quick-link">收藏夹</a>
+				<a href="#" class="sm-quick-link themeColor">品牌入驻</a>
+				<a href="#" class="sm-quick-link">我是卖家</a>
+			</div>
+		</div>
+	</div>
+	<div class="logo-container">
+		<div class="logo-content clearfix">
+			<div class="logo">
+				<img src="#" class="logoImage"/>
+			</div>
+			<div class="search-content">
+				<div class="clearfix">
+					<div class="search-box">
+						<input type="text" class="search-main" />
+					</div>
+					<div class="search-submitBtn">
+						<span class="search-submitBtn-icon"></span>
+					</div>
+				</div>
+				<div class="popular-search">
+					<a href="#" class="popular-search-link themeColor">女装</a>
+					<a href="#" class="popular-search-link">男装</a>
+					<a href="#" class="popular-search-link">潮童</a>
+					<a href="#" class="popular-search-link themeColor">内衣</a>
+					<a href="#" class="popular-search-link">鞋履</a>
+					<a href="#" class="popular-search-link">户外运动</a>
+				</div>
+			</div>
+			<div class="app-content">
+				<img src="#" class="app-code-image"/>
+				<p class="app-desc">手机客户端</p>
+				<p class="app-desc themeColor">扫我有惊喜</p>
+			</div>
+		</div>
+	</div>
+	<div class="main-content-container">
+		<div class="detail-content clearfix">
+			<div class="detail-gallery">
+				<div class="detail-gallery-main">
+					<!--<img src="../../static/images/test.jpg" class="detail-gallery-mainImg" alt="商品名" id="galleryMain"/>-->
+					<img src="//img.alicdn.com/bao/uploaded/i4/TB1Bk.VKXXXXXXNaXXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg" class="detail-gallery-mainImg" alt="商品名" id="galleryMain"/>
+				</div>
+				<ul class="detail-gallery-list clearfix" id="galleryTab">
+					<li class="detail-gallery-item active">
+						<img src="//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg" class="detail-gallery-itemImg"/>
+					</li>
+					<li class="detail-gallery-item">
+						<img src="//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg" class="detail-gallery-itemImg"/>
+					</li>
+					<li class="detail-gallery-item">
+						<img src="//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg" class="detail-gallery-itemImg"/>
+					</li>
+					<li class="detail-gallery-item">
+						<img src="//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg" class="detail-gallery-itemImg"/>
+					</li>
+					<li class="detail-gallery-item">
+						<img src="//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg" class="detail-gallery-itemImg"/>
+					</li>
+				</ul>
+				<div class="detail-action clearfix">
+					<a href="#" class="detail-addFavorite">
+						<i class="detail-addFavorite-icon detail-active"></i>
+						<span class="detail-acrtion-text">收藏</span>
+					</a>
+					<a href="#" class="detail-share">
+						<i class="detail-share-icon"></i>
+						<span class="detail-acrtion-text">分享</span>
+					</a>
+					<a href="#" class="detail-edit">举报</a>
+				</div>
+				<input type="hidden" id="skuSizeKey" value='dataSize=[{"key":"L","skuList":[{"id":11,"price":89,"skuCode":"黑色","stockNum":456},{"id":12,"price":98,"skuCode":"蓝色","stockNum":4545}]},{"key":"XL","skuList":[{"id":13,"price":436,"skuCode":"黑色","stockNum":46},{"id":14,"price":654,"skuCode":"蓝色","stockNum":234},{"id":15,"price":43,"skuCode":"红色","stockNum":1}]},{"key":"S","skuList":[{"id":3,"price":412,"skuCode":"粉红色","stockNum":2142},{"id":1,"price":12,"skuCode":"蓝色","stockNum":242},{"id":4,"price":123,"skuCode":"绿色","stockNum":222},{"id":2,"price":14,"skuCode":"黄色","stockNum":231}]},{"key":"M","skuList":[{"id":5,"price":23,"skuCode":"粉红色","stockNum":253},{"id":6,"price":42,"skuCode":"蓝色","stockNum":123},{"id":7,"price":4,"skuCode":"绿色","stockNum":645},{"id":8,"price":87,"skuCode":"黄色","stockNum":78},{"id":9,"price":78,"skuCode":"黑色","stockNum":34},{"id":10,"price":87,"skuCode":"红色","stockNum":34}]}]' />
+				<input type="hidden" id="skuColorKey" value='dataColor=[{"key":"黑色","skuList":[{"id":5,"price":23,"skuCode":"L","stockNum":253},{"id":13,"price":436,"skuCode":"XL","stockNum":46},{"id":5,"price":23,"skuCode":"M","stockNum":253}]},{"key":"蓝色","skuList":[{"id":12,"price":98,"skuCode":"L","stockNum":4545},{"id":14,"price":654,"skuCode":"XL","stockNum":234},{"id":1,"price":12,"skuCode":"S","stockNum":242},{"id":6,"price":42,"skuCode":"M","stockNum":123}]},{"key":"红色","skuList":[{"id":6,"price":14,"skuCode":"XL","stockNum":10},{"id":7,"price":11,"skuCode":"M","stockNum":11}]},{"key":"绿色","skuList":[{"id":4,"price":123,"skuCode":"S","stockNum":222},{"id":10,"price":87,"skuCode":"M","stockNum":34}]},{"key":"粉红色","skuList":[{"id":3,"price":412,"skuCode":"S","stockNum":2142},{"id":9,"price":78,"skuCode":"M","stockNum":34}]},{"key":"黄色","skuList":[{"id":2,"price":14,"skuCode":"S","stockNum":231},{"id":8,"price":87,"skuCode":"M","stockNum":78}]}]' />
+			</div>
+			<div class="detail-property">
+				<h1 class="item-title" th:text="${item.name}">【CC布丁家】韩国新款侧开叉字母撞色韩国新款侧开叉字母撞色...</h1>
+				<p class="item-description" th:text="${item.brief}">黑红两色 宽松韩版，插肩袖设计，不显肩宽哦 字母撞色设计简约而不单调~模特搭配店内均有出售哦~</p>
+				<div class="item-price-container">
+					<dl class="item-price-box">
+						<dt class="item-currentPrice"><span class="item-currentPrice-desc">￥</span><span id="J_currentPrice">123</span></dt>
+						<dd class="item-originPrice-con">
+							<p class="item-discount">4.5折</p>
+							<p class="item-originPrice" th:text="${item.marketPrice}">￥799</p>
+						</dd>
+						<dd class="clear"></dd>
+					</dl>
+					<div class="item-activity-container">
+						<dl class="item-activity-option clearfix">
+							<dt class="item-activity-type">折扣</dt>
+							<dd class="item-activity-description">购物满2件即享9折，满3件即享8.5折</dd>
+						</dl>
+						<dl class="item-activity-option clearfix">
+							<dt class="item-activity-type">折扣</dt>
+							<dd class="item-activity-description">购物满2件即享9折，满3件即享8.5折</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="item-sku">
+					<dl class="item-sku-prop">
+						<dt class="item-sku-title">尺码</dt>
+						<dd class="item-sku-main">
+							<ul class="item-sku-size-list clearfix" id="J_skuSize">
+								<!--<li class="item-sku-size-item" data-sizeValueId="1111">XXS</li>-->
+								<!--<li class="item-sku-size-item disabled" data-sizeValueId="122">XS</li>-->
+								<!--<li class="item-sku-size-item active" data-sizeValueId="1111">S</li>-->
+								<!--<li class="item-sku-size-item" data-sizeValueId="231">M</li>-->
+								<!--<li class="item-sku-size-item" data-sizeValueId="43">L</li>-->
+								<!--<li class="item-sku-size-item" data-sizeValueId="123">XL</li>-->
+								<li class="item-sku-size-item J_skuSize" title="L" th:each="map:${sizeList}" th:text="${map.value}">L</li>
+								<li class="item-sku-size-item J_skuSize" title="XL" th:each="map:${sizeList}" th:text="${map.value}">XL</li>
+								<li class="item-sku-size-item J_skuSize" title="M" th:each="map:${sizeList}" th:text="${map.value}">M</li>
+								<li class="item-sku-size-item J_skuSize" title="S" th:each="map:${sizeList}" th:text="${map.value}">S</li>
+							</ul>
+						</dd>
+						<dd class="clear"><p class="propAlert" id="J_sizeAlert"></p></dd>
+					</dl>
+					<dl class="item-sku-prop">
+						<dt class="item-sku-title">颜色</dt>
+						<dd class="item-sku-main">
+							<ul class="item-sku-color-list clearfix skuNoImg" id="J_skuColor">
+								<li class="item-sku-color-item" title="颜色名" th:each="map:${colorList}" th:text="${map.value}" style="background-image:url(//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg);">
+									<span class="J_skuColor">黄色</span>
+								</li>
+								<li class="item-sku-color-item" title="颜色名" th:each="map:${colorList}" th:text="${map.value}" style="background-image:url(//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg);">
+									<span class="J_skuColor">蓝色</span>
+								</li>
+								<li class="item-sku-color-item" title="颜色名" th:each="map:${colorList}" th:text="${map.value}" style="background-image:url(//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg);">
+									<span class="J_skuColor">黑色</span>
+								</li>
+								<li class="item-sku-color-item" title="颜色名" th:each="map:${colorList}" th:text="${map.value}" style="background-image:url(//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg);">
+									<span class="J_skuColor">红色</span>
+								</li>
+								<li class="item-sku-color-item" title="颜色名" th:each="map:${colorList}" th:text="${map.value}" style="background-image:url(//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg);">
+									<span class="J_skuColor">绿色</span>
+								</li>
+								<li class="item-sku-color-item" title="颜色名" th:each="map:${colorList}" th:text="${map.value}" style="background-image:url(//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg);">
+									<span class="J_skuColor">粉红色</span>
+								</li>
+							</ul>
+						</dd>
+						<dd class="clear"><p class="propAlert" id="J_colorAlert"></p></dd>
+					</dl>
+					<dl class="item-sku-prop">
+						<dt class="item-sku-title">数量</dt>
+						<dd class="item-sku-main" id="itemValue">
+							<span class="item-sku-qtyIncrease disabled-minus">-</span>
+							<input class="item-sku-qtyValue" type="text" value="1"/>
+							<span class="item-sku-qtyDecrease">+</span>
+						</dd>
+						<dd class="clear"></dd>
+					</dl>
+				</div>
+				<div class="item-action clearfix">
+					<!--<a href="#" class="item-action-buy item-btn">立刻购买</a>-->
+					<a href="javascript:void(0)" class="item-action-basket item-btn" id="J_addCart">加入购物车</a>
+				</div>
+			</div>
+		</div>
+		<div class="detail-banner">
+			<img src="#"/>
+		</div>
+		<div class="detail-mainwrap">
+			<div class="detail-tabBar-con" id="tabBar">
+				<ul class="detail-tabBar clearfix">
+					<li class="detail-tab active">商品详情</li>
+					<!--<li class="detail-tab">买家评价</li>
+					<li class="detail-tab">月成交量</li>
+					<li class="detail-tab"><a href="#" class="detail-tab-link">联系客服</a></li>-->
+					<!--<li class="detail-addCartcon">
+						<div class="fix-addCart-btn" id="fixAddCart">加入购物车</div>
+						<div class="fix-price-con">
+							<del class="fix-originPrice">￥333</del>
+							<span class="fix-curPrice">￥222</span>
+						</div>
+					</li>-->
+				</ul>
+			</div>
+			<div class="detail-tab-container" id="tabContainer">
+				<div class="detail-tab-con">
+					<div class="detail-tab-size-con">
+						<h3 class="detail-tab-title-con">
+							<i class="detail-tab-title-icon"></i>
+							<strong class="detail-tab-title">商品尺码</strong>
+							<span class="detail-tab-title-desc">SIZE</span>
+						</h3>
+						<b class="detail-tab-size-title">TIPS：</b>
+						<p class="detail-tab-size-text">1. 选购时，请综合参考尺码表中各项参数，有助于你选择到更合适的尺码。</p>
+						<p class="detail-tab-size-text">2.（只适用服装）平铺测量自己的合身服装尺寸作参考，对比选购更准确！</p>
+						<p class="detail-tab-size-text">3. 请放心挑选尺码，迎天下7天退货无忧替你保驾护航。</p>
+						<b class="detail-tab-size-title">尺码对照表：</b>
+						<div class="detail-tab-size-tableCon">
+							<input id="sizeTemplateId" type="hidden" th:value="${sizeTemplateJson}"/>
+							<table class="size-table" id="sizeCon"></table>
+						</div>
+					</div>
+					<div class="detail-tab-arguments-con">
+						<h3 class="detail-tab-title-con">
+							<i class="detail-tab-title-icon"></i>
+							<strong class="detail-tab-title">商品参数</strong>
+							<span class="detail-tab-title-desc">DETAIL</span>
+						</h3>
+						<ul class="detail-arguments-table clearfix">
+							<!--@thymesVar id="valueList" type=""-->
+							<li class="detail-arguments-item" th:each="itemMetaProperty:${valueList}">
+								<b class="detail-arguments-item-title" th:text="${itemMetaProperty.name}"></b>
+								<p class="detail-arguments-item-description" th:each ="itemMetaPropertyValues:${itemMetaProperty.itemMetaPropertyValues}" th:text="${itemMetaPropertyValues.value}" >channel</p>
+							</li>
+							<!--<li class="detail-arguments-item">-->
+								<!--<b class="detail-arguments-item-title">品牌名称：</b>-->
+								<!--<p class="detail-arguments-item-description">channel</p>-->
+							<!--</li>-->
+
+						</ul>
+					</div>
+					<div class="detail-tab-show-con">
+						<h3 class="detail-tab-title-con">
+							<i class="detail-tab-title-icon"></i>
+							<strong class="detail-tab-title">商品展示</strong>
+							<span class="detail-tab-title-desc">IMAGE</span>
+						</h3>
+						<div class="detail-images-con">
+							<img src="../../static/images/test.jpg" class="detail-images"/>
+							<img src="../../static/images/test.jpg" class="detail-images"/>
+							<img src="../../static/images/test.jpg" class="detail-images"/>
+						</div>
+					</div>
+					<div class="detail-tab-sell-con">
+						<h3 class="detail-tab-title-con">
+							<i class="detail-tab-title-icon"></i>
+							<strong class="detail-tab-title">售后说明</strong>
+							<span class="detail-tab-title-desc">INSTRUCTIONS</span>
+						</h3>
+						<b class="detail-tab-size-title">一、保修</b>
+						<p class="detail-tab-size-text">1.售后保修政策：本手表自购买之日起质保一年（全国联保，保修机芯）；</p> 
+						<p class="detail-tab-size-text">2.在不影响我二次销售的前提下，7天内任何质量问题（因个人喜好、人为损坏、摔坏，私自折除零配件不予以退货外）可给予退货处理。</p> 
+						<p class="detail-tab-size-text">以下情况不在免费保修范围内：</p>
+						<p class="detail-tab-size-text">1、电池使用寿命；</p>
+						<p class="detail-tab-size-text">2、手表正常使用过程中表面的划伤、划痕、表带磨损。</p>
+						<p class="detail-tab-size-text">3、因意外原因、疏忽或处理不善导致产品配件的损坏、包括表带、表扣、把的、玻璃等等。</p>
+						<p class="detail-tab-size-text">4、不按照使用说明使用导致手表损坏的（非防水手表佩戴者洗澡、游泳导致手表进水）。</p>
+						<p class="detail-tab-size-text">5、所购手表表带过长（此情况不属于质量问题，建议不用去售后中心，根据个人情况就近解决）</p>
+						<p class="detail-tab-size-text">温馨提示：</p>
+						<p class="detail-tab-size-text">保一年，凡属质量问题（人为损坏除外），在出示有效的质量保修卡和购买凭证后，可为您免费维修。</p>
+						<p class="detail-tab-size-text">售后服务热线：4008006452</p>
+					</div>
+				</div>
+				<!--<div class="detail-tab-con" style="display:none;">
+					<ul class="detail-deal-list">
+						<li class="detail-deal-item detail-deal-item-thead">
+							<div class="detail-deal-buyer detail-deal-option">买家</div>
+							<div class="detail-deal-attribute detail-deal-option">款式/型号</div>
+							<div class="detail-deal-num detail-deal-option">数量</div>
+							<div class="detail-deal-time detail-deal-option">成交时间</div>
+							<div class="clear"></div>
+						</li>
+						<li class="detail-deal-item clearfix">
+							<div class="detail-deal-buyer detail-deal-option">一**子 <span class="grey">(匿名)</span></div>
+							<div class="detail-deal-attribute detail-deal-option">
+								<p class="detail-deal-text">颜色:绿色</p>
+								<p class="detail-deal-text">尺码:S</p>
+							</div>
+							<div class="detail-deal-num detail-deal-option">1</div>
+							<div class="detail-deal-time detail-deal-option">
+								<p class="detail-deal-text">2015-10-17</p>
+								<p class="detail-deal-text grey">13:08:08</p>
+							</div>
+						</li>
+						<li class="detail-deal-item clearfix">
+							<div class="detail-deal-buyer detail-deal-option">一**子 <span class="grey">(匿名)</span></div>
+							<div class="detail-deal-attribute detail-deal-option">
+								<p class="detail-deal-text">颜色:绿色</p>
+								<p class="detail-deal-text">尺码:S</p>
+							</div>
+							<div class="detail-deal-num detail-deal-option">1</div>
+							<div class="detail-deal-time detail-deal-option">
+								<p class="detail-deal-text">2015-10-17</p>
+								<p class="detail-deal-text grey">13:08:08</p>
+							</div>
+						</li>
+						<li class="detail-deal-item clearfix">
+							<div class="detail-deal-buyer detail-deal-option">一**子 <span class="grey">(匿名)</span></div>
+							<div class="detail-deal-attribute detail-deal-option">
+								<p class="detail-deal-text">颜色:绿色</p>
+								<p class="detail-deal-text">尺码:S</p>
+							</div>
+							<div class="detail-deal-num detail-deal-option">1</div>
+							<div class="detail-deal-time detail-deal-option">
+								<p class="detail-deal-text">2015-10-17</p>
+								<p class="detail-deal-text grey">13:08:08</p>
+							</div>
+						</li>
+						<li class="detail-deal-item clearfix">
+							<div class="detail-deal-buyer detail-deal-option">一**子 <span class="grey">(匿名)</span></div>
+							<div class="detail-deal-attribute detail-deal-option">
+								<p class="detail-deal-text">颜色:绿色</p>
+								<p class="detail-deal-text">尺码:S</p>
+							</div>
+							<div class="detail-deal-num detail-deal-option">1</div>
+							<div class="detail-deal-time detail-deal-option">
+								<p class="detail-deal-text">2015-10-17</p>
+								<p class="detail-deal-text grey">13:08:08</p>
+							</div>
+						</li>
+					</ul>
+					<div class="rate-pages-list">
+						<a href="#" class="rate-page">上一页</a>
+						<a href="#" class="rate-page active">1</a>
+						<a href="#" class="rate-page">2</a>
+						<span href="#" class="rate-page-break">...</span>
+						<a href="#" class="rate-page">6</a>
+						<a href="#" class="rate-page">7</a>
+						<a href="#" class="rate-page">8</a>
+						<a href="#" class="rate-page">9</a>
+						<a href="#" class="rate-page">下一页</a>
+					</div>
+				</div>-->
+				<!--<div class="detail-tab-con" style="display:none;">
+					<div class="detail-rate-con">
+						<div class="detail-rate-action-con clearfix">
+							<div class="detail-rate-left-action">
+								<a href="#" class="detail-rate-action active">全部评价（1201）</a>
+								<a href="#" class="detail-rate-action">晒图（60）</a>
+							</div>
+							<div class="detail-rate-right-action">
+								<div class="rate-sort">
+									<input type="radio" />
+									<label for="">默认排序</label>
+								</div>
+								<div class="rate-sort">
+									<input type="radio" />
+									<label for="">时间排序</label>
+								</div>
+							</div>
+						</div>
+						<ul class="detail-rate-list">
+							<li class="detail-rate-item">
+								<div class="rate-head-con">
+									<img src="../../static/images/test.jpg" class="rate-head-img"/>
+								</div>
+								<div class="detail-rate-main">
+									<dl class="detail-rate-name-con">
+										<dt class="detail-rate-name">q********</dt>
+										<dd class="detail-rate-time">2015年10月16日</dd>
+									</dl>
+									<div class="rate-description">快递实在是太慢了，等了好久好久，说是特价其实也没有低很多啊，就便宜了3块钱而已啦，衣服挺有特色的，料子一般般啦</div>
+									<div class="rate-sku">
+										<span class="rate-sku-item">颜色:黑色 </span>
+										<span class="rate-sku-item">尺码:XL</span>
+									</div>
+									<div class="rate-images">
+										<ul class="rate-images-tab-con clearfix">
+											<li class="rate-images-tab-item active">
+												<img src="../../static/images/test.jpg" class="rate-images-tab"/>
+											</li>
+											<li class="rate-images-tab-item">
+												<img src="../../static/images/test.jpg" class="rate-images-tab"/>
+											</li>
+											<li class="rate-images-tab-item">
+												<img src="../../static/images/test.jpg" class="rate-images-tab"/>
+											</li>
+										</ul>
+										<div class="rate-main-image-con">
+											<img src="../../static/images/test.jpg" class="rate-main-image"/>
+										</div>
+									</div>
+								</div>
+								<p class="clear"></p>
+							</li>
+							<li class="detail-rate-item">
+								<div class="rate-head-con">
+									<img src="../../static/images/test.jpg" class="rate-head-img"/>
+								</div>
+								<div class="detail-rate-main">
+									<dl class="detail-rate-name-con clearfix">
+										<dt class="detail-rate-name">q********</dt>
+										<dd class="detail-rate-time">2015年10月16日</dd>
+									</dl>
+									<div class="rate-description">快递实在是太慢了，等了好久好久，说是特价其实也没有低很多啊，就便宜了3块钱而已啦，衣服挺有特色的，料子一般般啦</div>
+									<div class="rate-sku">
+										<span class="rate-sku-item">颜色:黑色 </span>
+										<span class="rate-sku-item">尺码:XL</span>
+									</div>
+								</div>
+								<p class="clear"></p>
+							</li>
+						</ul>
+						<div class="rate-pages-list">
+							<a href="#" class="rate-page">上一页</a>
+							<a href="#" class="rate-page active">1</a>
+							<a href="#" class="rate-page">2</a>
+							<span href="#" class="rate-page-break">...</span>
+							<a href="#" class="rate-page">6</a>
+							<a href="#" class="rate-page">7</a>
+							<a href="#" class="rate-page">8</a>
+							<a href="#" class="rate-page">9</a>
+							<a href="#" class="rate-page">下一页</a>
+						</div>
+					</div>
+				</div>-->
+			</div>
+		</div>
+		<!--<div class="detail-moreitems">
+			<h2 class="detail-more-title">商品推荐</h2>
+			<div class="detail-interest-container" id="interestCon">
+				<div class="clearfix">
+					<h3 class="detail-interest-title">橱窗推荐</h3>
+					<dl class="detail-interest-page-con" id="pageAction">
+						<dt class="detail-interest-page"><span class="page-icon"></span></dt>
+						<dd class="detail-interest-page active">1</dd>
+						<dd class="detail-interest-page">2</dd>
+						<dd class="detail-interest-page">3</dd>
+						<dd class="detail-interest-page">4</dd>
+						<dd class="detail-interest-page">5</dd>
+						<dt class="detail-interest-page"><span class="page-icon page-icon-right"></span></dt>
+					</dl>
+				</div>
+				<div class="interest-wrap-section">
+					<div class="interest-wrap-container clearfix" id="IwrapCon">
+						<div class="interest-wrap">
+							<a href="#" class="interest-item-link" th:each="recommend:${recommendList}">
+								<div class="interest-item-images-con">
+									<img  class="interest-item-image" th:src="${recommend.iconImageKey}" th:id="${recommend.id}"/>
+								</div>
+								<div class="interest-item-brand" th:text="${recommend.brandId}"></div>
+								<div class="interest-item-name" th:text="${recommend.name}"></div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice" th:text="${recommend.marketPrice}">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+						</div>
+						<div class="interest-wrap">
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+						</div>
+						<div class="interest-wrap">
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+						</div>
+						<div class="interest-wrap">
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+						</div>
+						<div class="interest-wrap">
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+							<a href="#" class="interest-item-link">
+								<div class="interest-item-images-con">
+									<img src="../../static/images/test.jpg" class="interest-item-image"/>
+								</div>
+								<div class="interest-item-brand">DIOR</div>
+								<div class="interest-item-name">灰蓝色潮流印纹长袖夹克灰蓝色潮流印纹长袖夹克</div>
+								<div class="interest-item-price-con">
+									<b class="interest-item-curPrice">￥188</b>
+									<span class="interest-item-discount">(1.2折)</span>
+									<del class="interest-item-originPrice">￥399</del>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="interest-wrap-action" id="IAction">
+						<span class="interest-wrap-btn"></span>
+						<span class="interest-wrap-btn next"></span>
+					</div>
+				</div>
+			</div>
+		</div>-->
+	</div>
+</div>
+<div class="footer-content footer-990">
+	<div class="index-footer">
+		<div class="footer-promise clearfix">
+			<a class="footer-promise-item">
+				<i class="footer-promise-icon zheng"></i>
+				<span class="footer-promise-text">100%品牌授权正品</span>
+				<b class="footer-promise-desc"></b>
+			</a>
+			<a class="footer-promise-item">
+				<i class="footer-promise-icon you"></i>
+				<span class="footer-promise-text">汇聚全网底价优品</span>
+				<b class="footer-promise-desc"></b>
+			</a>
+			<a class="footer-promise-item">
+				<i class="footer-promise-icon huan"></i>
+				<span class="footer-promise-text">7天无理由退换</span>
+				<b class="footer-promise-desc"></b>
+			</a>
+			<a class="footer-promise-item">
+				<i class="footer-promise-icon bao"></i>
+				<span class="footer-promise-text">全网包邮</span>
+			</a>
+		</div>
+		<div class="footer-desc clearfix">
+			<dl class="footer-desc-list">
+				<dt class="footer-desc-title">关于我们</dt>
+				<dd class="footer-desc-item"><a href="#">关于我们</a></dd>
+				<dd class="footer-desc-item"><a href="#">诚聘英才</a></dd>
+				<dd class="footer-desc-item"><a href="#">服务条款</a></dd>
+			</dl>
+			<dl class="footer-desc-list">
+				<dt class="footer-desc-title">帮助中心</dt>
+				<dd class="footer-desc-item"><a href="#">新手上路</a></dd>
+				<dd class="footer-desc-item"><a href="#">服务指南</a></dd>
+				<dd class="footer-desc-item"><a href="#">常见问题</a></dd>
+				<dd class="footer-desc-item"><a href="#">在线客服</a></dd>
+			</dl>
+			<dl class="footer-desc-list">
+				<dt class="footer-desc-title">支付方式</dt>
+				<dd class="footer-desc-item"><a href="#">支付宝</a></dd>
+				<dd class="footer-desc-item"><a href="#">微信钱包</a></dd>
+			</dl>
+			<dl class="footer-desc-list">
+				<dt class="footer-desc-title">商家入驻</dt>
+				<dd class="footer-desc-item"><a href="#">入驻说明</a></dd>
+				<dd class="footer-desc-item"><a href="#">入驻资质</a></dd>
+			</dl>
+			<dl class="footer-desc-list">
+				<dt class="footer-desc-title">会员服务</dt>
+				<dd class="footer-desc-item"><a href="#">积分攻略</a></dd>
+			</dl>
+			<dl class="footer-desc-list">
+				<dt class="footer-desc-title">记住我们</dt>
+				<dd class="footer-desc-item"><a href="#">记住域名：<span>ytx.com</span></a></dd>
+				<dd class="footer-desc-item"><a href="#">百度搜索：<span>迎天下</span></a></dd>
+				<dd class="footer-desc-item"><a href="#">收藏本站：<span>加入收藏</span></a></dd>
+			</dl>
+			<dl class="footer-desc-list">
+				<dt class="footer-desc-title">下载手机版</dt>
+				<dd class="footer-desc-item">
+					<img src="#" class="footer-desc-code"/>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+<!--<div id="fixSku" style="display:none;">
+	<div class="fix-sku-con">
+		<div class="fix-close" id="fixClose"></div>
+		<dl class="item-sku-prop">
+			<dt class="item-sku-title">尺码</dt>
+			<dd class="item-sku-main">
+				<ul class="item-sku-size-list clearfix" id="J_popSkuSize">
+					<li class="item-sku-size-item J_skuSize" title="L" th:each="map:${sizeList}" th:text="${map.value}">L</li>
+					<li class="item-sku-size-item J_skuSize" title="XL" th:each="map:${sizeList}" th:text="${map.value}">XL</li>
+					<li class="item-sku-size-item J_skuSize" title="M" th:each="map:${sizeList}" th:text="${map.value}">M</li>
+					<li class="item-sku-size-item J_skuSize" title="S" th:each="map:${sizeList}" th:text="${map.value}">S</li>
+				</ul>
+			</dd>
+			<dd class="clear"></dd>
+		</dl>
+		<dl class="item-sku-prop">
+			<dt class="item-sku-title">颜色</dt>
+			<dd class="item-sku-main">
+				<ul class="item-sku-color-list clearfix" id="J_skuColor">
+					<li class="item-sku-color-item" title="颜色名" th:each="map:${colorList}" th:text="${map.value}" style="background-image:url(//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg);">
+						<span class="J_skuColor">黄色</span>
+					</li>
+					<li class="item-sku-color-item" title="颜色名" th:each="map:${colorList}" th:text="${map.value}" style="background-image:url(//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg);">
+						<span class="J_skuColor">蓝色</span>
+					</li>
+					<li class="item-sku-color-item" title="颜色名" th:each="map:${colorList}" th:text="${map.value}" style="background-image:url(//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg);">
+						<span class="J_skuColor">黑色</span>
+					</li>
+					<li class="item-sku-color-item" title="颜色名" th:each="map:${colorList}" th:text="${map.value}" style="background-image:url(//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg);">
+						<span class="J_skuColor">红色</span>
+					</li>
+					<li class="item-sku-color-item" title="颜色名" th:each="map:${colorList}" th:text="${map.value}" style="background-image:url(//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg);">
+						<span class="J_skuColor">绿色</span>
+					</li>
+					<li class="item-sku-color-item" title="颜色名" th:each="map:${colorList}" th:text="${map.value}" style="background-image:url(//img.alicdn.com/imgextra/i2/641725918/TB2watHfpXXXXabXpXXXXXXXXXX_!!641725918.jpg_60x60q90.jpg);">
+						<span class="J_skuColor">粉红色</span>
+					</li>
+				</ul>
+			</dd>
+			<dd class="clear"></dd>
+		</dl>
+		<dl class="item-sku-prop">
+			<dt class="item-sku-title">数量</dt>
+			<dd class="item-sku-main">
+				<span class="item-sku-qtyIncrease">-</span>
+				<input class="item-sku-qtyValue" type="text" value="1"/>
+				<span class="item-sku-qtyDecrease">+</span>
+			</dd>
+			<dd class="clear"></dd>
+		</dl>
+		<div class="fix-sku-addcart-btn">确定</div>
+	</div>
+</div>-->
+<script th:src="@{/webjars/jquery/2.1.4/jquery.min.js}" src="../../static/js/jquery-1.11.3.min.js"></script>
+<script src="../../static/js/domReady.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../static/js/itemdetail.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

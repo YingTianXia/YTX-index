@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
+<title>迎天下-确认订单</title>
+<link rel="stylesheet" type="text/css" href="../../static/css/style.css"/>
+</head>
+<body>
+<div class="main-container">
+	<div class="header">
+		<div class="header-topNav-container">
+			<div class="header-topNav">
+				<a href="#" class="header-topNav-link">登录</a>
+				<a href="#" class="header-topNav-link">注册</a>
+				<a href="#" class="header-topNav-link">购物车</a>
+				<a href="#" class="header-topNav-link">我的订单</a>
+			</div>
+		</div>
+	</div>
+	<div class="main-content-container">
+		<div class="confirmOrder">
+			<div class="address-module">
+				<h2 class="title">选择收货地址</h2>
+				<div class="address-con">
+					<div class="add-outer zoom" id="addressOuter">
+						<ul class="address-list clearfix" id="addressList">
+							<li class="address-item active">
+								<div class="address-item-main">
+									<dl class="address-item-prop">
+										<dt class="prop-icon-name"></dt>
+										<dd class="prop-content">张斯基~</dd>
+									</dl>
+									<dl class="address-item-prop">
+										<dt class="prop-icon-tel"></dt>
+										<dd class="prop-content">18504815823</dd>
+									</dl>
+									<div class="address-bd">浙江省杭州市 文一西路与崇义交叉口郡原公元里9幢9单元6楼</div>
+									<div class="address-tag">默认地址</div>
+									<span class="address-active"></span>
+								</div>
+							</li>
+							<li class="address-item">
+								<div class="address-item-main">
+									<dl class="address-item-prop">
+										<dt class="prop-icon-name"></dt>
+										<dd class="prop-content">张斯基~</dd>
+									</dl>
+									<dl class="address-item-prop">
+										<dt class="prop-icon-tel"></dt>
+										<dd class="prop-content">18504815823</dd>
+									</dl>
+									<div class="address-bd">浙江省杭州市 文一西路与崇义交叉口郡原公元里9幢9单元6楼</div>
+									<span class="address-active"></span>
+								</div>
+							</li>
+							<li class="address-item">
+								<div class="address-item-main">
+									<dl class="address-item-prop">
+										<dt class="prop-icon-name"></dt>
+										<dd class="prop-content">张斯基~</dd>
+									</dl>
+									<dl class="address-item-prop">
+										<dt class="prop-icon-tel"></dt>
+										<dd class="prop-content">18504815823</dd>
+									</dl>
+									<div class="address-bd">浙江省杭州市 文一西路与崇义交叉口郡原公元里9幢9单元6楼</div>
+									<span class="address-active"></span>
+								</div>
+							</li>
+							<li class="address-item">
+								<div class="address-item-main">
+									<dl class="address-item-prop">
+										<dt class="prop-icon-name"></dt>
+										<dd class="prop-content">张斯基~</dd>
+									</dl>
+									<dl class="address-item-prop">
+										<dt class="prop-icon-tel"></dt>
+										<dd class="prop-content">18504815823</dd>
+									</dl>
+									<div class="address-bd">浙江省杭州市 文一西路与崇义交叉口郡原公元里9幢9单元6楼</div>
+									<span class="address-active"></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="address-control clearfix">
+						<div class="create-address" id="createAddr">使用新地址</div>
+						<a href="#" class="manage-address">管理收获地址</a>
+						<div class="all-address" id="allAddress" style="display:none;">显示全部地址</div>
+					</div>
+				</div>
+				<div class="create-addCon zoom" style="display:none;" id="addressCon">
+					<dl class="create-add-list clearfix">
+						<dt class="create-add-name">省：<span class="yellow">*</span></dt>
+						<dd class="create-add-content">
+							<select name="">
+								<option value="浙江省">浙江省</option>
+							</select>
+							<span>市：</span>
+							<select name="">
+								<option value="杭州市">杭州市</option>
+							</select>
+							<span>区：</span>
+							<select name="">
+								<option value="西湖区">西湖区</option>
+							</select>
+							<p class="alert"></p>
+						</dd>
+					</dl>
+					<dl class="create-add-list clearfix">
+						<dt class="create-add-name">邮政编码：<span class="yellow">*</span></dt>
+						<dd class="create-add-content">
+							<input type="text" />
+							<p class="alert"></p>
+						</dd>
+					</dl>
+					<dl class="create-add-list clearfix">
+						<dt class="create-add-name">街道地址：<span class="yellow">*</span></dt>
+						<dd class="create-add-content">
+							<textarea rows="2" placeholder="建议您如实填写详细收货地址，例如街道名称，门牌号码，楼层和房间号等信息"></textarea>
+							<p class="alert">请填写街道地址，最少5个字，</p>
+						</dd>
+					</dl>
+					<dl class="create-add-list clearfix">
+						<dt class="create-add-name">收货人姓名：<span class="yellow">*</span></dt>
+						<dd class="create-add-content">
+							<input type="text" placeholder="长度不超过15个字符" maxlength="15" />
+							<p class="alert"></p>
+						</dd>
+					</dl>
+					<dl class="create-add-list clearfix">
+						<dt class="create-add-name">手机：<span class="yellow">*</span></dt>
+						<dd class="create-add-content">
+							<input type="text" />
+							<p class="alert"></p>
+						</dd>
+					</dl>
+					<div class="create-addCon-action clearfix">
+						<div class="createAddr" id="confirmAddress">确认地址</div>
+						<div class="cancel" id="createAddr_cancel">取消</div>
+					</div>
+				</div>
+			</div>
+			<div class="item-module">
+				<h2 class="title">确认商品信息</h2>
+				<div class="order-table zoom">
+					<div class="order-thead clearfix">
+						<div class="th th-item">商品</div>
+						<div class="th th-sku">商品信息</div>
+						<div class="th th-price">单价（元）</div>
+						<div class="th th-acount">数量</div>
+						<div class="th th-discount">优惠</div>
+						<div class="th th-sum">小计（元）</div>
+					</div>
+					<div class="order-tbody" id="orderMain">
+						<div class="order-container" data-selleracountid="一匹狼">
+							<div class="seller">品牌：<span>西米SEEME</span></div>
+							<ul class="order-tr clearfix">
+								<li class="td th-item">
+									<a href="#" class="item-image-con">
+										<img src="#" class="item-image"/>
+									</a>
+									<a href="#" class="item-name">韩版中长款个性薄风衣韩版中长款个性薄风衣</a>
+								</li>
+								<li class="td th-sku">
+									<p class="sku-prop">颜色：浅蓝色</p>
+									<p class="sku-prop">尺码：L</p>
+								</li>
+								<li class="td th-price">
+									<span>120.00</span>
+								</li>
+								<li class="td th-acount" data-value="1" data-itemskuid="12456">
+									<span>1</span>
+								</li>
+								<li class="td th-discount">
+									<span>7折</span>
+								</li>
+								<li class="td th-sum">120.00</li>
+							</ul>
+							<ul class="order-tr clearfix">
+								<li class="td th-item">
+									<a href="#" class="item-image-con">
+										<img src="#" class="item-image"/>
+									</a>
+									<a href="#" class="item-name">韩版中长款个性薄风衣韩版中长款个性薄风衣</a>
+								</li>
+								<li class="td th-sku">
+									<p class="sku-prop">颜色：浅蓝色</p>
+									<p class="sku-prop">尺码：L</p>
+								</li>
+								<li class="td th-price">
+									<span>120.00</span>
+								</li>
+								<li class="td th-acount" data-value="1" data-itemskuid="1456">
+									<span>1</span>
+								</li>
+								<li class="td th-discount">
+									<span>7折</span>
+								</li>
+								<li class="td th-sum">120.00</li>
+							</ul>
+							<div class="order-discount zoom">
+								<dl class="discount-list clearfix">
+									<dd class="full-value" data-full="20.00">-￥<span>20.00</span></dd>
+									<dt class="discount-name">
+										<i class="discount-icon-minus"></i>
+										<span class="discount-name-text">满¥300.00减¥20.00</span>
+									</dt>
+								</dl>
+								<dl class="discount-list clearfix">
+									<dd class="discount-value">-￥<span>0.00</span></dd>
+									<dt class="discount-name">
+										<i class="discount-icon-coupons"></i>
+										<span class="discount-name-text">可使用优惠券：</span>
+										<select class="discount-select" data-Discount = "0">
+											<option value="0">请选择优惠卷</option>
+											<option value="10.00" data-discountid="11">全店铺满3件减10元</option>
+											<option value="20.00" data-discountid="12">全店铺满3件减20元</option>
+											<option value="30.00" data-discountid="13">全店铺满3件减30元</option>
+										</select>
+									</dt>
+								</dl>
+								<div class="order-RB clearfix">
+									<div class="mes">
+										<span class="mes-text">备注：</span>
+										<input type="text" class="mes-input" placeholder="选填，可填写您和卖家达成一致的要求"/>
+									</div>
+									<dl class="RB">
+										<dt class="RB-value">-￥<span>0.00</span></dt>
+										<dd class="RB-desc">
+											<i class="RB-icon"></i>
+											<span class="RB-text">可使用红包：</span>
+											<select class="RB-select" data-RP = "0">
+												<option value="0">请选择红包</option>
+											</select>
+										</dd>
+									</dl>
+								</div>
+								<div class="order-express">快递运费：<del class="grey">￥15</del><b>全平台包邮</b></div>
+							</div>
+							<div class="brand-total">合计：<span class="brand-num">￥<em class="brand-value">880.00</em></span></div>
+						</div>
+						<div class="order-container" data-selleracountid="一匹狼">
+							<div class="seller">品牌：<span>西米SEEME</span></div>
+							<ul class="order-tr clearfix">
+								<li class="td th-item">
+									<a href="#" class="item-image-con">
+										<img src="#" class="item-image"/>
+									</a>
+									<a href="#" class="item-name">韩版中长款个性薄风衣韩版中长款个性薄风衣</a>
+								</li>
+								<li class="td th-sku">
+									<p class="sku-prop">颜色：浅蓝色</p>
+									<p class="sku-prop">尺码：L</p>
+								</li>
+								<li class="td th-price">
+									<span>120.00</span>
+								</li>
+								<li class="td th-acount" data-value="1" data-itemskuid="12456">
+									<span>1</span>
+								</li>
+								<li class="td th-discount">
+									<span>7折</span>
+								</li>
+								<li class="td th-sum">120.00</li>
+							</ul>
+							<ul class="order-tr clearfix">
+								<li class="td th-item">
+									<a href="#" class="item-image-con">
+										<img src="#" class="item-image"/>
+									</a>
+									<a href="#" class="item-name">韩版中长款个性薄风衣韩版中长款个性薄风衣</a>
+								</li>
+								<li class="td th-sku">
+									<p class="sku-prop">颜色：浅蓝色</p>
+									<p class="sku-prop">尺码：L</p>
+								</li>
+								<li class="td th-price">
+									<span>120.00</span>
+								</li>
+								<li class="td th-acount" data-value="1" data-itemskuid="1456">
+									<span>1</span>
+								</li>
+								<li class="td th-discount">
+									<span>7折</span>
+								</li>
+								<li class="td th-sum">120.00</li>
+							</ul>
+							<div class="order-discount zoom">
+								<dl class="discount-list clearfix">
+									<dd class="full-value" data-full="20.00">-￥<span>20.00</span></dd>
+									<dt class="discount-name">
+										<i class="discount-icon-minus"></i>
+										<span class="discount-name-text">满¥300.00减¥20.00</span>
+									</dt>
+								</dl>
+								<dl class="discount-list clearfix">
+									<dd class="discount-value">-￥<span>0.00</span></dd>
+									<dt class="discount-name">
+										<i class="discount-icon-coupons"></i>
+										<span class="discount-name-text">可使用优惠券：</span>
+										<select class="discount-select" data-Discount = "0">
+											<option value="0">请选择优惠卷</option>
+											<option value="10.00" data-discountid="21">全店铺满3件减10元</option>
+											<option value="20.00" data-discountid="22">全店铺满3件减20元</option>
+											<option value="30.00" data-discountid="23">全店铺满3件减30元</option>
+										</select>
+									</dt>
+								</dl>
+								<div class="order-RB clearfix">
+									<div class="mes">
+										<span class="mes-text">备注：</span>
+										<input type="text" class="mes-input" placeholder="选填，可填写您和卖家达成一致的要求"/>
+									</div>
+									<dl class="RB">
+										<dt class="RB-value">-￥<span>0.00</span></dt>
+										<dd class="RB-desc">
+											<i class="RB-icon"></i>
+											<span class="RB-text">可使用红包：</span>
+											<select class="RB-select" data-RP = "0">
+												<option value="0">请选择红包</option>
+											</select>
+										</dd>
+									</dl>
+								</div>
+								<div class="order-express">快递运费：<del class="grey">￥15</del><b>全平台包邮</b></div>
+							</div>
+							<div class="brand-total">合计：<span class="brand-num">￥<em class="brand-value">880.00</em></span></div>
+						</div>
+						<div class="order-container" data-selleracountid="二匹狼">
+							<div class="seller">品牌：<span>西米SEEME</span></div>
+							<ul class="order-tr clearfix">
+								<li class="td th-item">
+									<a href="#" class="item-image-con">
+										<img src="#" class="item-image"/>
+									</a>
+									<a href="#" class="item-name">韩版中长款个性薄风衣韩版中长款个性薄风衣</a>
+								</li>
+								<li class="td th-sku">
+									<p class="sku-prop">颜色：浅蓝色</p>
+									<p class="sku-prop">尺码：L</p>
+								</li>
+								<li class="td th-price">
+									<span>120.00</span>
+								</li>
+								<li class="td th-acount" data-value="1" data-itemskuid="12456">
+									<span>1</span>
+								</li>
+								<li class="td th-discount">
+									<span>7折</span>
+								</li>
+								<li class="td th-sum">120.00</li>
+							</ul>
+							<ul class="order-tr clearfix">
+								<li class="td th-item">
+									<a href="#" class="item-image-con">
+										<img src="#" class="item-image"/>
+									</a>
+									<a href="#" class="item-name">韩版中长款个性薄风衣韩版中长款个性薄风衣</a>
+								</li>
+								<li class="td th-sku">
+									<p class="sku-prop">颜色：浅蓝色</p>
+									<p class="sku-prop">尺码：L</p>
+								</li>
+								<li class="td th-price">
+									<span>120.00</span>
+								</li>
+								<li class="td th-acount" data-value="1" data-itemskuid="12456">
+									<span>1</span>
+								</li>
+								<li class="td th-discount">
+									<span>7折</span>
+								</li>
+								<li class="td th-sum">120.00</li>
+							</ul>
+							<ul class="order-tr clearfix">
+								<li class="td th-item">
+									<a href="#" class="item-image-con">
+										<img src="#" class="item-image"/>
+									</a>
+									<a href="#" class="item-name">韩版中长款个性薄风衣韩版中长款个性薄风衣</a>
+								</li>
+								<li class="td th-sku">
+									<p class="sku-prop">颜色：浅蓝色</p>
+									<p class="sku-prop">尺码：L</p>
+								</li>
+								<li class="td th-price">
+									<span>120.00</span>
+								</li>
+								<li class="td th-acount" data-value="1" data-itemskuid="12456">
+									<span>1</span>
+								</li>
+								<li class="td th-discount">
+									<span>7折</span>
+								</li>
+								<li class="td th-sum">120.00</li>
+							</ul>
+							<div class="order-discount zoom">
+								<dl class="discount-list clearfix">
+									<dd class="full-value" data-full="20.00">-￥<span>20.00</span></dd>
+									<dt class="discount-name">
+										<i class="discount-icon-minus"></i>
+										<span class="discount-name-text">满¥300.00减¥20.00</span>
+									</dt>
+								</dl>
+								<dl class="discount-list clearfix">
+									<dd class="discount-value">-￥<span>0.00</span></dd>
+									<dt class="discount-name">
+										<i class="discount-icon-coupons"></i>
+										<span class="discount-name-text">可使用优惠券：</span>
+										<select class="discount-select" data-Discount = "0">
+											<option value="0">请选择优惠卷</option>
+											<option value="10.00" data-discountid="31">全店铺满3件减10元</option>
+											<option value="20.00" data-discountid="32">全店铺满3件减20元</option>
+											<option value="30.00" data-discountid="33">全店铺满3件减30元</option>
+										</select>
+									</dt>
+								</dl>
+								<div class="order-RB clearfix">
+									<div class="mes">
+										<span class="mes-text">备注：</span>
+										<input type="text" class="mes-input" placeholder="选填，可填写您和卖家达成一致的要求"/>
+									</div>
+									<dl class="RB">
+										<dt class="RB-value">-￥<span>0.00</span></dt>
+										<dd class="RB-desc">
+											<i class="RB-icon"></i>
+											<span class="RB-text">可使用红包：</span>
+											<select class="RB-select" data-RP = "0">
+												<option value="0">请选择红包</option>
+											</select>
+										</dd>
+									</dl>
+								</div>
+								<div class="order-express">快递运费：<del class="grey">￥15</del><b>全平台包邮</b></div>
+							</div>
+							<div class="brand-total">合计：<span class="brand-num">￥<em class="brand-value">880.00</em></span></div>
+						</div>
+					</div>
+					<div class="checkbar clearfix">
+						<div class="due">
+							<p class="money">
+								<span class="hd">实付款：</span>
+								<span class="bd"><span class="tc-rmb">￥</span><strong class="rmb" id="Y_total">0.00</strong>
+								</span>
+								<del class="ori-rmb">332.00</del>
+							</p>
+							<div class="point">可获得积分：<span class="point-value">1643点</span></div>
+						</div>
+						<div class="point-con">
+							<div class="hd">
+								<input type="checkbox" id="usePoint" /><label for="usePoint">使用积分</label>
+							</div>
+							<div class="bd">
+								<div>
+									<span class="colon">：</span>
+									<input type="text" class="bd-input" id="bdInput" />
+									<span class="text">点</span>
+									<span class="discharge">-<span>￥</span><strong id="pointDiscount">0.00</strong></span>
+								</div>
+								<p class="totalPoint">(可用<span class="totalPointVal" id="userPoints">666</span>点)</p>
+							</div>
+						</div>
+					</div>
+					<div class="action clearfix">
+						<div class="submit" id="confirmOrder">提交订单</div>
+						<a href="#" class="backCart">返回购物车修改</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="../../static/js/domReady.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../static/js/confirmorder.js" type="text/javascript" charset="utf-8"></script>
+</html>

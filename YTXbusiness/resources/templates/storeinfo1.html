@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>迎天下-招商-店铺信息</title>
+<link rel="stylesheet" type="text/css" href="../static/css/style.css"/>
+</head>
+<body>
+<div class="conbody">
+	<div class="headerCon">
+		<div class="header clearfix">
+			<div class="logoCon">
+				<img src="#" class="logo" alt="迎天下,logo"/>
+			</div>
+			<div class="header-title">入驻系统</div>
+			<a href="#" class="header-userCenter">商家中心</a>
+		</div>
+	</div>
+	<div class="stepCon">
+		<div class="stepLine">
+			<div class="step-one step-all">
+				<p class="step-num step-already">1</p>
+				<div class="step-text">入驻须知</div>
+			</div>
+			<div class="step-two step-all">
+				<p class="step-num step-already">2</p>
+				<div class="step-text">信息提交</div>
+			</div>
+			<div class="step-three step-all">
+				<p class="step-num">3</p>
+				<div class="step-text">等待审核</div>
+			</div>
+			<div class="step-four step-all">
+				<p class="step-num">4</p>
+				<div class="step-text">保证金缴纳</div>
+			</div>
+			<div class="step-five step-all">
+				<p class="step-num">5</p>
+				<div class="step-text">入驻成功</div>
+			</div>
+			<div class="step-curLine step-curline-two"></div>
+		</div>
+	</div>
+	<div class="mainCon clearfix">
+		<div class="leftSidebar">
+			<p class="leftSidebar-title">信息提交</p>
+			<a href="#" class="sidebarLink yellow">店铺信息</a>
+			<span class="sidebar-position">店铺申请信息</span>
+			<span class="sidebar-position">店铺负责人信息</span>
+			<a href="#" class="sidebarLink">品牌资质</a>
+			<a href="#" class="sidebarLink">公司资质</a>
+			<span class="sidebar-position">公司营业执照</span>
+			<span class="sidebar-position">组织机构代码证</span>
+			<span class="sidebar-position">税务登记证</span>
+			<span class="sidebar-position">开户许可证</span>
+		</div>
+		<div class="mainContent">
+			<form id="form" action="#" th:action="@{/sellerShop/save}" method="post" th:object="${sellerShop}" enctype="multipart/form-data" >
+			<div class="rightContent">
+				<h2 class="rightContent-title">店铺信息<span class="rightContent-title-desc">以下所需要上传电子版仅支持JPG,GIF,PNG格式的图片，大小不超过1MB</span></h2>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>店铺名：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="name" th:field="*{name}"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>域名：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="domain" th:field="*{domain}"/>
+					</dd>
+				</dl>
+
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>主营类目：</dt>
+					<dd class="form-content">
+						<div class="form-select-content clearfix">
+							<select class="form-select" name="mainType">
+								<option class="form-option" value="">请选择</option>
+							</select>
+							<p class="form-text">二级类目：</p>
+							<select class="form-select" name="secondType">
+								<option class="form-option" value="">请选择</option>
+							</select>
+						</div>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>运营人数：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="operatorNum" th:field="*{operatorNum}"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>仓库情况：</dt>
+					<dd class="form-content">
+						<textarea class="form-textarea" rows="4" name="warehouse" th:field="*{warehouse}"></textarea>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>ERP情况：</dt>
+					<dd class="form-content">
+						<textarea class="form-textarea" rows="4" name="hasERP" th:field="*{hasERP}"></textarea>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>日常发货能力：</dt>
+					<dd class="form-content">
+						<div class="form-nofloat">
+							每日<input type="text" class="form-input-nofloat" name="deliveryCapability" th:field="*{deliveryCapability}"/>单
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<div class="rightContent">
+				<h2 class="rightContent-title">店铺负责人信息</h2>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>姓名：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="principal" th:field="*{principal}"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>职位：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="principalPosition" th:field="*{principalPosition}"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>手机号码：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="principalMobile" th:field="*{principalMobile}"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>电子邮箱：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="principalEmail" th:field="*{principalEmail}"/>
+					</dd>
+				</dl>
+			</div>
+			<input type="submit" class="agreementBtn agreementBtn-active" id="agreementBtn" value="提交">
+			</form>
+		</div>
+	</div>
+</div>
+<script src="../static/js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/js/jquery.validate-1.13.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/js/additional-methods.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/js/storeinfoForm.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

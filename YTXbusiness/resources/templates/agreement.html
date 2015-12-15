@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>迎天下-招商-协议</title>
+<link rel="stylesheet" type="text/css" href="../static/css/style.css"/>
+</head>
+<body>
+<div class="conbody">
+	<div class="headerCon">
+		<div class="header clearfix">
+			<div class="logoCon">
+				<img src="#" class="logo" alt="迎天下,logo"/>
+			</div>
+			<div class="header-title">入驻系统</div>
+			<a href="#" class="header-userCenter">商家中心</a>
+		</div>
+	</div>
+	<div class="stepCon">
+		<div class="stepLine">
+			<div class="step-one step-all">
+				<p class="step-num step-already">1</p>
+				<div class="step-text">入驻须知</div>
+			</div>
+			<div class="step-two step-all">
+				<p class="step-num">2</p>
+				<div class="step-text">信息提交</div>
+			</div>
+			<div class="step-three step-all">
+				<p class="step-num">3</p>
+				<div class="step-text">等待审核</div>
+			</div>
+			<div class="step-four step-all">
+				<p class="step-num">4</p>
+				<div class="step-text">保证金缴纳</div>
+			</div>
+			<div class="step-five step-all">
+				<p class="step-num">5</p>
+				<div class="step-text">入驻成功</div>
+			</div>
+			<div class="step-curLine"></div>
+		</div>
+	</div>
+	<div class="agreementCon">
+		<h2 class="agreement-title">签约在线协议</h2>
+		<div class="agreement-main">
+			<h3 class="agreement-main-title">迎天下服务协议</h3>
+			<p class="agreement-main-text">发布须知：迎天下禁止发布侵犯他人知识产权的商品，请确认商品符合知识产权保护的规定</p>
+			<p class="agreement-main-text">服务协议</p>
+			<p class="agreement-main-text">在接受本服务协议（以下简称“本协议”）之前，请您仔细阅读本协议的全部内容。如果您对本协议的任何条款有疑问，请通过客服渠道进行询问，我们将向您解释条款内容。如果您不同意本协议的任何内容，或者无法准确理解美丽说对条款的解释，请不要进行后续操作。否则，表示您已接受了以下所述的全部条款和条件，同意受本协议约束。</p>
+			<p class="agreement-main-text">迎天下对本协议中的所有条款有解释权，迎天下有权以修改、更新等方式不时调整本协议及附件，以及相关规则的内容，相关内容将公布于迎天下上或以其他方式通知商家。除非商家通知迎天下不愿接受调整后的内容并停止使用迎天下服务，否则调整后的内容将于公布之日或通知另行指定的日期开始生效。 </p>
+			<p class="agreement-main-text">1.合作模式</p>
+			<p class="agreement-main-text">1.1 迎天下根据其技术能力和资源提供美丽说平台服务。</p>
+			<p class="agreement-main-text">1.2 商家通过迎天下向用户提供商品或服务，商家应依法经营，自负盈亏，独立承担责任和风险。</p>
+			<p class="agreement-main-text">发布须知：迎天下禁止发布侵犯他人知识产权的商品，请确认商品符合知识产权保护的规定</p>
+			<p class="agreement-main-text">服务协议</p>
+			<p class="agreement-main-text">在接受本服务协议（以下简称“本协议”）之前，请您仔细阅读本协议的全部内容。如果您对本协议的任何条款有疑问，请通过客服渠道进行询问，我们将向您解释条款内容。如果您不同意本协议的任何内容，或者无法准确理解美丽说对条款的解释，请不要进行后续操作。否则，表示您已接受了以下所述的全部条款和条件，同意受本协议约束。</p>
+			<p class="agreement-main-text">迎天下对本协议中的所有条款有解释权，迎天下有权以修改、更新等方式不时调整本协议及附件，以及相关规则的内容，相关内容将公布于迎天下上或以其他方式通知商家。除非商家通知迎天下不愿接受调整后的内容并停止使用迎天下服务，否则调整后的内容将于公布之日或通知另行指定的日期开始生效。 </p>
+			<p class="agreement-main-text">1.合作模式</p>
+			<p class="agreement-main-text">1.1 迎天下根据其技术能力和资源提供美丽说平台服务。</p>
+			<p class="agreement-main-text">1.2 商家通过迎天下向用户提供商品或服务，商家应依法经营，自负盈亏，独立承担责任和风险。</p>
+		</div>
+		<div class="agreement-checkboxCon">
+			<input type="checkbox" class="agreement-checkbox" id="checkAgreement" /><label for="checkAgreement" class="agreement-checklabel">我已确认阅读并同意《迎天下服务协议》</label>
+		</div>
+	</div>
+	<a href="#" class="agreementBtn" id="agreementBtn">我同意</a>
+</div>
+</body>
+<script type="text/javascript">
+	var checkAgreement = document.getElementById('checkAgreement'),
+		agreementBtn = document.getElementById('agreementBtn');
+	checkAgreement.onclick = function(){
+		if(this.checked){
+			agreementBtn.className = 'agreementBtn agreementBtn-active';
+		}else{
+			agreementBtn.className = 'agreementBtn';
+		};
+	};
+</script>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>迎天下-招商-店铺信息</title>
+    <script type="text/javascript" src="/static/My97DatePicker/WdatePicker.js"></script>
+    <script src="/webjars/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="conbody">
+	<div class="headerCon">
+		<div class="header clearfix">
+			<div class="logoCon">
+				<img src="#" class="logo" alt="迎天下,logo"/>
+			</div>
+			<div class="header-title">入驻系统</div>
+			<a href="#" class="header-userCenter">商家中心</a>
+		</div>
+	</div>
+	<div class="stepCon">
+		<div class="stepLine">
+			<div class="step-one step-all">
+				<p class="step-num step-already">1</p>
+				<div class="step-text">入驻须知</div>
+			</div>
+			<div class="step-two step-all">
+				<p class="step-num step-already">2</p>
+				<div class="step-text">信息提交</div>
+			</div>
+			<div class="step-three step-all">
+				<p class="step-num">3</p>
+				<div class="step-text">等待审核</div>
+			</div>
+			<div class="step-four step-all">
+				<p class="step-num">4</p>
+				<div class="step-text">保证金缴纳</div>
+			</div>
+			<div class="step-five step-all">
+				<p class="step-num">5</p>
+				<div class="step-text">入驻成功</div>
+			</div>
+			<div class="step-curLine step-curline-two"></div>
+		</div>
+	</div>
+	<div class="mainCon clearfix">
+        <div class="leftSidebar">
+            <p class="leftSidebar-title">信息提交</p>
+            <a href="/sellerShop/find" class="sidebarLink">店铺信息</a>
+            <span class="sidebar-position">店铺申请信息</span>
+            <span class="sidebar-position">店铺负责人信息</span>
+            <a href="/brandAuth/find" class="sidebarLink yellow">品牌资质</a>
+            <a href="/companyAuth/find" class="sidebarLink">公司资质</a>
+            <span class="sidebar-position">公司营业执照</span>
+            <span class="sidebar-position">组织机构代码证</span>
+            <span class="sidebar-position">税务登记证</span>
+            <span class="sidebar-position">开户许可证</span>
+        </div>
+        <!--@thymesVar id="sellerShop" type="com.ytx.seller.SellerShop"-->
+        <form id="form" action="#" th:action="@{/sellerShop/save}" method="post" th:object="${sellerShop}" enctype="multipart/form-data" >
+		<div class="mainContent">
+			<div class="rightContent">
+				<h2 class="rightContent-title">店铺信息<span class="rightContent-title-desc">以下所需要上传电子版仅支持JPG,GIF,PNG格式的图片，大小不超过1MB</span></h2>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>店铺名：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="name" th:field="*{name}"/>
+						<p class="form-alert"><i class="form-alert-icon"></i>请填写店铺名</p>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>域名：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="domain" th:field="*{domain}"/>
+						<p class="form-alert"><i class="form-alert-icon"></i>请填写店铺名</p>
+					</dd>
+				</dl>
+
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>主营类目：</dt>
+					<dd class="form-content">
+						<div class="form-select-content clearfix">
+							<select class="form-select">
+								<option class="form-option" value="">请选择</option>
+							</select>
+							<p class="form-text">二级类目：</p>
+							<select class="form-select">
+								<option class="form-option" value="">请选择</option>
+							</select>
+						</div>
+						<p class="form-alert nofloat"><i class="form-alert-icon"></i>请填写店铺名</p>
+					</dd>
+				</dl>
+
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>运营人数：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="operatorNum" th:field="*{operatorNum}"/>
+						<p class="form-alert"><i class="form-alert-icon"></i>请填写店铺名</p>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>仓库情况：</dt>
+					<dd class="form-content">
+						<textarea class="form-textarea" rows="4" name="warehouse" th:field="*{warehouse}"></textarea>
+						<p class="form-alert"><i class="form-alert-icon"></i>请填写店铺名</p>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>ERP情况：</dt>
+					<dd class="form-content">
+						<textarea class="form-textarea" rows="4" name="hasERP" th:field="*{hasERP}"></textarea>
+						<p class="form-alert"><i class="form-alert-icon"></i>请填写店铺名</p>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>日常发货能力：</dt>
+					<dd class="form-content">
+						<div class="form-nofloat">
+							每日<input type="text" class="form-input-nofloat" name="deliveryCapability" th:field="*{deliveryCapability}"/>单
+						</div>
+						<p class="form-alert"><i class="form-alert-icon"></i>请填写店铺名</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="rightContent">
+				<h2 class="rightContent-title">店铺负责人信息</h2>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>姓名：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="principal" th:field="*{principal}"/>
+						<p class="form-alert"><i class="form-alert-icon"></i>请填写店铺名</p>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>职位：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="principalPosition" th:field="*{principalPosition}"/>
+						<p class="form-alert"><i class="form-alert-icon"></i>请填写店铺名</p>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>手机号码：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="principalMobile" th:field="*{principalMobile}"/>
+						<p class="form-alert"><i class="form-alert-icon"></i>请填写店铺名</p>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>电子邮箱：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="principalEmail" th:field="*{principalEmail}"/>
+						<p class="form-alert"><i class="form-alert-icon"></i>请填写店铺名</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="agreementBtn agreementBtn-active" id="agreementBtn">提交</div>
+		</div>
+        </form>
+	</div>
+</div>
+<script>
+    $(function(){
+        $("#agreementBtn").click(function(){
+            $("#form").submit();
+        });
+    });
+    function clickUp(id){
+        document.getElementById(id).click();
+    }
+</script>
+</body>
+</html>

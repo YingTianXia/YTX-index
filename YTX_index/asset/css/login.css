@@ -1,0 +1,164 @@
+/*pop*/
+.popMask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  display: none;
+  z-index: 99; }
+
+.J_pop {
+  position: fixed;
+  top: 100px;
+  left: 200px;
+  border: 3px solid #999;
+  background: #fff;
+  padding: 20px 40px;
+  z-index: 100;
+  display: none; }
+
+.login-code-content {
+  width: 300px;
+  height:400px;
+  float: left;
+  overflow: hidden;
+  position: relative; }
+
+.login-code-image {
+  width: 100%; }
+
+.login-main {
+  float: left;
+  padding: 16px 0 0 60px; }
+
+.login-title {
+  line-height: 56px;
+  height: 56px; }
+  .login-title .login-title-icon, .login-title .login-title-text {
+    display: inline-block;
+    vertical-align: middle; }
+  .login-title .login-title-icon {
+    width: 56px;
+    height: 52px;
+    background: url(/static/images/payment.png) no-repeat -1px 0; }
+  .login-title .login-title-text {
+    font-size: 30px;
+    margin-left: 10px; }
+
+.login-prompt-icon, .login-prompt-text {
+  vertical-align: middle;
+  display: inline-block; }
+
+.login-prompt {
+  margin-top: 60px; }
+
+.login-prompt-icon {
+  width: 51px;
+  height: 51px;
+  background: url(/static/images/img_2.png) no-repeat 0 0; }
+
+.login-prompt-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-left: 15px; }
+
+.login-popClose {
+	background:url(../images/close.png) no-repeat 0 0;
+	background-size:100%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  cursor: pointer;
+  font-size: 18px;
+  right: 10px;
+  top: 10px; }
+.impowerBox .qrcode{
+  width:100%;
+}
+/*login.html by yeting*/
+.login .login-logo{
+  width: 990px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.login .login-main{
+  width: 990px;
+  min-height: 400px;
+  margin: 0 auto;
+  position: relative;
+  background: url(/static/images/login-bg.jpg) no-repeat;
+  background-position: 30px 50px;
+}
+.login .login-con{
+  width: 340px;
+  height: 257px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 1000;
+  border: 1px solid #e0e0e0;
+  -moz-border-radius: 5px;      /* Gecko browsers */
+  -webkit-border-radius: 5px;   /* Webkit browsers */
+  border-radius:5px;            /* W3C syntax */
+  box-shadow:0 0 10px 0px #e0e0e0;
+  overflow: hidden;
+  padding: 16px 30px 27px;
+}
+.login .login-con .login-con-title{
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  padding-bottom: 10px;
+  border-bottom: #FD9500 solid 1px;
+}
+.login .login-con .login-con-main input{
+  display: block;
+  width: 297px;
+  height: 28px;
+  margin-top: 25px;
+  padding-left: 36px;
+  background: url(/static/images/icon_login.png) no-repeat;
+  border: 1px solid #C6C6C6;
+  -moz-border-radius: 5px;      /* Gecko browsers */
+  -webkit-border-radius: 5px;   /* Webkit browsers */
+  border-radius:5px;            /* W3C syntax */
+}
+.login .login-con .login-con-main .login-main-username{
+  background-position: 8px 5px;
+}
+.login .login-con .login-con-main .login-main-password{
+  background-position: 8px -33px;
+}
+.login .login-con .login-con-main .login-main-remind{
+  height: 26px;
+  line-height: 26px;
+  color: red;
+  font-size: 10px;
+}
+.login .login-con .login-main-loginButton{
+  width: 337px;
+  height: 30px;
+  background-color: #FD9500;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius:5px;
+}
+.login .login-con .login-con-register{
+  float: left;
+  padding:20px 0 0 0px;
+  color: #666;
+}
+.login .login-con .login-con-findPassword{
+  float: right;
+  padding:20px 0 0 0;
+  color: #666;
+}

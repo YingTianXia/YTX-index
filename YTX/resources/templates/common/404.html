@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
+<title>迎天下</title>
+<link rel="stylesheet" type="text/css" href="../../static/css/style.css"/>
+</head>
+<body style="background:url(../../static/images/404Bg.jpg) repeat 0 0;">
+<div class="main-container" style="position:relative;">
+	<div id="J_main404" style="position:absolute;width:100%;">
+		<div class="main-404Icon">
+			<img src="../../static/images/404Icon.png"/>
+		</div>
+		<p class="L-404text">很抱歉，您查看的页面找不到了！</p><br />
+		<div class="L-404actions">
+			<a href="#" class="L-404action">返回首页</a>
+			<a href="#" class="L-404action">上一页</a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var windowHeight = document.documentElement.clientHeight || document.body.clientHeight,
+		J_main404H = document.getElementById('J_main404');
+	J_main404H.style.top =(windowHeight - J_main404H.offsetHeight)/2 + 'px';
+</script>
+</body>
+</html>

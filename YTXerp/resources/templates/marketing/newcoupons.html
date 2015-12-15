@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>迎天下ERP管理系统-红包管理</title>
+<link rel="stylesheet" type="text/css" href="../../static/css/style.css"/>
+<script src="../../static/js/domReady.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../static/js/sidebar.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	myReady(function(){
+		sidebar();
+	});
+</script>
+</head>
+<body>
+<div class="erp-container">
+	<div class="headerCon">
+		<div class="header clearfix">
+			<div class="logoCon"><img src="" alt="迎天下ERP-logo" class="logo"/></div>
+			<div class="header-controler-con">
+				<a href="#" class="header-controler header-controler-logout">user123123</a>
+				<a href="#" class="header-controler header-controler-center"><i class="header-controler-center-icon"></i><span class="header-controler-text">我的中心</span></a>
+				<a href="#" class="header-controler header-controler-user"><i class="header-controler-user-icon"></i><span class="header-controler-text">退出</span></a>
+			</div>
+		</div>
+	</div>
+	<div class="container clearfix">
+		<div class="public-leftSidebar" id="sidebar">
+			<div class="PL-list">
+				<h3 class="PL-list-title clearfix">
+					<i class="PL-list-icon PL-list-icon-index"></i>
+					<span class="PL-list-title-text">首页管理</span>
+				</h3>
+				<ul class="Pl-list-content">
+					<li class="PL-list-item PL-list-activeItem"><a href="#">官网首页管理</a></li>
+					<li class="PL-list-item"><a href="#">APP首页管理</a></li>
+				</ul>
+			</div>
+			<div class="PL-list">
+				<h3 class="PL-list-title clearfix">
+					<i class="PL-list-icon PL-list-icon-company"></i>
+					<span class="PL-list-title-text">商家管理</span>
+				</h3>
+				<ul class="Pl-list-content">
+					<li class="PL-list-item"><a href="#">商家入驻审核</a></li>
+					<li class="PL-list-item"><a href="#">商家列表</a></li>
+				</ul>
+			</div>
+			<div class="PL-list">
+				<h3 class="PL-list-title clearfix">
+					<i class="PL-list-icon PL-list-icon-brand"></i>
+					<span class="PL-list-title-text">品牌管理</span>
+				</h3>
+				<ul class="Pl-list-content">
+					<li class="PL-list-item"><a href="#">品牌管理</a></li>
+				</ul>
+			</div>
+			<div class="PL-list">
+				<h3 class="PL-list-title clearfix">
+					<i class="PL-list-icon PL-list-icon-goods"></i>
+					<span class="PL-list-title-text">商品管理</span>
+				</h3>
+				<ul class="Pl-list-content">
+					<li class="PL-list-item"><a href="#">新增商品</a></li>
+					<li class="PL-list-item"><a href="#">商品列表</a></li>
+					<li class="PL-list-item"><a href="#">尺寸模版</a></li>
+				</ul>
+			</div>
+			<div class="PL-list">
+				<h3 class="PL-list-title clearfix">
+					<i class="PL-list-icon PL-list-icon-marketing"></i>
+					<span class="PL-list-title-text">销售管理</span>
+				</h3>
+				<ul class="Pl-list-content">
+					<li class="PL-list-item"><a href="#">销售数据</a></li>
+					<li class="PL-list-item"><a href="#">订单分析</a></li>
+				</ul>
+			</div>
+			<div class="PL-list">
+				<h3 class="PL-list-title clearfix">
+					<i class="PL-list-icon PL-list-icon-sell"></i>
+					<span class="PL-list-title-text">售后管理</span>
+				</h3>
+				<ul class="Pl-list-content">
+					<li class="PL-list-item"><a href="#">售后管理</a></li>
+				</ul>
+			</div>
+			<div class="PL-list">
+				<h3 class="PL-list-title clearfix">
+					<i class="PL-list-icon PL-list-icon-cal"></i>
+					<span class="PL-list-title-text">结算管理</span>
+				</h3>
+				<ul class="Pl-list-content">
+					<li class="PL-list-item"><a href="#">保证金管理</a></li>
+					<li class="PL-list-item"><a href="#">销售结算</a></li>
+					<li class="PL-list-item"><a href="#">费用调整</a></li>
+					<li class="PL-list-item"><a href="#">平台收支明细</a></li>
+					<li class="PL-list-item"><a href="#">账单列表</a></li>
+				</ul>
+			</div>
+			<div class="PL-list">
+				<h3 class="PL-list-title clearfix">
+					<i class="PL-list-icon PL-list-icon-data"></i>
+					<span class="PL-list-title-text">数据中心</span>
+				</h3>
+				<ul class="Pl-list-content">
+					<li class="PL-list-item"><a href="#">经营概况</a></li>
+					<li class="PL-list-item"><a href="#">专场分析</a></li>
+					<li class="PL-list-item"><a href="#">团购分析</a></li>
+					<li class="PL-list-item"><a href="#">专场单品分析</a></li>
+					<li class="PL-list-item"><a href="#">团购场单品分析</a></li>
+					<li class="PL-list-item"><a href="#">用户分析</a></li>
+					<li class="PL-list-item"><a href="#">流量分析</a></li>
+					<li class="PL-list-item"><a href="#">地域分析</a></li>
+					<li class="PL-list-item"><a href="#">转化复购分析</a></li>
+				</ul>
+			</div>
+			<div class="PL-list">
+				<h3 class="PL-list-title clearfix">
+					<i class="PL-list-icon PL-list-icon-activity"></i>
+					<span class="PL-list-title-text">活动管理</span>
+				</h3>
+				<ul class="Pl-list-content">
+					<li class="PL-list-item"><a href="#">迎品汇管理</a></li>
+					<li class="PL-list-item"><a href="#">迎粉团管理</a></li>
+				</ul>
+			</div>
+			<div class="PL-list">
+				<h3 class="PL-list-title clearfix">
+					<i class="PL-list-icon PL-list-icon-tools"></i>
+					<span class="PL-list-title-text">营销工具</span>
+				</h3>
+				<ul class="Pl-list-content">
+					<li class="PL-list-item"><a href="#">优惠卷</a></li>
+					<li class="PL-list-item"><a href="#">红包</a></li>
+					<li class="PL-list-item"><a href="#">首单优惠</a></li>
+					<li class="PL-list-item"><a href="#">新人福利</a></li>
+					<li class="PL-list-item"><a href="#">分享有奖</a></li>
+					<li class="PL-list-item"><a href="#">福袋</a></li>
+					<li class="PL-list-item"><a href="#">积分兑换</a></li>
+				</ul>
+			</div>
+			<div class="PL-list">
+				<h3 class="PL-list-title clearfix">
+					<i class="PL-list-icon PL-list-icon-erp"></i>
+					<span class="PL-list-title-text">接口管理</span>
+				</h3>
+				<ul class="Pl-list-content">
+					<li class="PL-list-item"><a href="#">erp接口</a></li>
+				</ul>
+			</div>
+			<div class="PL-list">
+				<h3 class="PL-list-title clearfix">
+					<i class="PL-list-icon PL-list-icon-user"></i>
+					<span class="PL-list-title-text">会员管理</span>
+				</h3>
+				<ul class="Pl-list-content">
+					<li class="PL-list-item"><a href="#">会员分析</a></li>
+				</ul>
+			</div>
+			<div class="PL-list">
+				<h3 class="PL-list-title clearfix">
+					<i class="PL-list-icon PL-list-icon-system"></i>
+					<span class="PL-list-title-text">公告系统</span>
+				</h3>
+				<ul class="Pl-list-content">
+					<li class="PL-list-item"><a href="#">APP推送</a></li>
+					<li class="PL-list-item"><a href="#">PC站内信</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="erp-main">
+			<div class="erp-main-title-con clearfix" style="margin-top:0;">
+				<h1 class="erp-main-title">红包管理</h1>
+			</div>
+			<div class="newcoupons-container">
+				<h3 class="newcoupons-title">创建红包</h3>
+				<div class="newcoupons-main-con">
+					<div class="newcoupons-main-title-con">
+						<i class="newcoupons-main-title-icon">红</i>
+						<span class="newcoupons-main-title">可针对产品类型发放红包，在下单时使用，得到优惠。</span>
+					</div>
+					<dl class="newcoupons-form-list clearfix">
+						<dt class="newcoupons-form-name"><span class="yellow">*</span>活动名称：</dt>
+						<dd class="newcoupons-form-con">
+							<input type="text" class="newcoupons-form-input" placeholder="请输入活动名称" />
+						</dd>
+					</dl>
+					<dl class="newcoupons-form-list clearfix">
+						<dt class="newcoupons-form-name"><span class="yellow">*</span>活动类型：</dt>
+						<dd class="newcoupons-form-con">
+							<input type="checkbox" class="inlineblock" id=""/><label for="" class="newcoupons-form-label inlineblock">新人福利</label>
+							<input type="checkbox" class="inlineblock" id=""/><label for="" class="newcoupons-form-label inlineblock">分享红包</label>
+							<input type="checkbox" class="inlineblock" id=""/><label for="" class="newcoupons-form-label inlineblock">其他</label>
+						</dd>
+					</dl>
+					<dl class="newcoupons-form-list clearfix">
+						<dt class="newcoupons-form-name"> 活动时间：</dt>
+						<dd class="newcoupons-form-con">
+							<input type="text" class="newcoupons-form-input inlineblock input100" />
+							<span class="inlineblock newcoupons-form-line">—</span>
+							<input type="text" class="newcoupons-form-input inlineblock input100" />
+						</dd>
+					</dl>
+					<dl class="newcoupons-form-list clearfix">
+						<dt class="newcoupons-form-name"><span class="yellow">*</span>面值：</dt>
+						<dd class="newcoupons-form-con">
+							<input type="text" class="newcoupons-form-input inlineblock input100" />
+						</dd>
+					</dl>
+					<dl class="newcoupons-form-list clearfix">
+						<dt class="newcoupons-form-name"><span class="yellow">*</span>发行数量：</dt>
+						<dd class="newcoupons-form-con">
+							<input type="checkbox" class="inlineblock" id=""/><label for="" class="newcoupons-form-label inlineblock">不限数量</label>
+							<input type="checkbox" class="inlineblock" id=""/><label for="" class="newcoupons-form-label inlineblock">限量发行</label>
+							<input type="text" class="newcoupons-form-input inlineblock input100" placeholder="输入具体发行量" />
+						</dd>
+					</dl>
+					<dl class="newcoupons-form-list clearfix">
+						<dt class="newcoupons-form-name"><span class="yellow">*</span>领用方式：</dt>
+						<dd class="newcoupons-form-con">
+							<input type="checkbox" class="inlineblock" id=""/><label for="" class="newcoupons-form-label inlineblock">平台发放</label>
+							<input type="checkbox" class="inlineblock" id=""/><label for="" class="newcoupons-form-label inlineblock">用户领用</label>
+						</dd>
+					</dl>
+					<dl class="newcoupons-form-list clearfix zoom">
+						<dt class="newcoupons-form-name"><span class="yellow">*</span>使用范围：</dt>
+						<dd class="newcoupons-form-con">
+							<div class="newcoupons-form-block">
+								<input type="checkbox" class="inlineblock" id=""/><label for="" class="newcoupons-form-label inlineblock">全站通用</label>
+							</div>
+							<div class="newcoupons-form-block">
+								<input type="checkbox" class="inlineblock" id=""/><label for="" class="newcoupons-form-label inlineblock">限制使用</label>
+								<div class="newcoupons-form-block">
+									<span class="inlineblock">大类（可多选）:</span>
+									<input type="checkbox" id="" class="inlineblock"/><label for="" class="newcoupons-form-label inlineblock">服饰</label>
+									<input type="checkbox" id="" class="inlineblock"/><label for="" class="newcoupons-form-label inlineblock">鞋包</label>
+									<input type="checkbox" id="" class="inlineblock"/><label for="" class="newcoupons-form-label inlineblock">家具用品</label>
+									<input type="checkbox" id="" class="inlineblock"/><label for="" class="newcoupons-form-label inlineblock">母婴用品</label>
+								</div>
+								<div class="newcoupons-form-block">
+									<span class="inlineblock">一级（可多选）:</span>
+									<input type="checkbox" id="" class="inlineblock"/><label for="" class="newcoupons-form-label inlineblock">服饰</label>
+									<input type="checkbox" id="" class="inlineblock"/><label for="" class="newcoupons-form-label inlineblock">鞋包</label>
+									<input type="checkbox" id="" class="inlineblock"/><label for="" class="newcoupons-form-label inlineblock">家具用品</label>
+									<input type="checkbox" id="" class="inlineblock"/><label for="" class="newcoupons-form-label inlineblock">母婴用品</label>
+								</div>
+							</div>
+							<div class="newcoupons-form-block">
+								<input type="checkbox" class="inlineblock" id=""/>
+								<label for="" class="newcoupons-form-label inlineblock">指定商家/品牌</label>
+								<select class="newcoupons-form-select inlineblock">
+									<option value="">搜索商家手动输入转跳</option>
+								</select>
+							</div>
+						</dd>
+					</dl>
+					<dl class="newcoupons-form-list clearfix">
+						<dt class="newcoupons-form-name"><span class="yellow">*</span>使用人群：</dt>
+						<dd class="newcoupons-form-con">
+							<input type="checkbox" class="inlineblock" id="" checked/><label for="" class="newcoupons-form-label inlineblock">新注册会员</label>
+						</dd>
+					</dl>
+					<dl class="newcoupons-form-list clearfix">
+						<dt class="newcoupons-form-name"><span class="yellow">*</span>有效期：</dt>
+						<dd class="newcoupons-form-con">
+							<input type="checkbox" class="inlineblock" id="" />
+							<label for="" class="newcoupons-form-label inlineblock">7天</label>
+							<input type="checkbox" class="inlineblock" id="" />
+							<label for="" class="newcoupons-form-label inlineblock">10天</label>
+							<input type="checkbox" class="inlineblock" id="" />
+							<label for="" class="newcoupons-form-label inlineblock">自定义</label>
+							<input type="text" class="newcoupons-form-input inlineblock input100" />
+							<span class="inlineblock newcoupons-form-line">—</span>
+							<input type="text" class="newcoupons-form-input inlineblock input100" />
+						</dd>
+					</dl>
+					<dl class="newcoupons-form-list clearfix">
+						<dt class="newcoupons-form-name">使用条件：</dt>
+						<dd class="newcoupons-form-con">
+							<span class="newcoupons-form-text inlineblock">单笔订单中，在指定的宝贝中购物金额满</span>
+							<input type="text" class="newcoupons-form-input inlineblock input100" style="margin:0 2px;" placeholder="输入金额" />
+							<span class="newcoupons-form-text inlineblock">元可使用此券。请计算好使用红券后的商品价格。</span>
+						</dd>
+					</dl>
+					<dl class="newcoupons-form-list clearfix">
+						<dt class="newcoupons-form-name"><span class="yellow">*</span>每人限领：</dt>
+						<dd class="newcoupons-form-con">
+							<input type="text" class="newcoupons-form-input inlineblock input100" style="margin:0 2px;" placeholder="张数" />
+							<span class="newcoupons-form-text inlineblock">张</span>
+						</dd>
+					</dl>
+				</div>
+				<div class="newcoupons-action">
+					<div class="newcoupons-action-submit inlineblock">提交</div>
+					<div class="newcoupons-action-cancel inlineblock">取消</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

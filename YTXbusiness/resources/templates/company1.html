@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>迎天下-招商-公司资质</title>
+<link rel="stylesheet" type="text/css" href="../static/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../static/css/laydate.css"/>
+<link rel="stylesheet" type="text/css" href="../static/css/laydate1.css"/>
+</head>
+<body>
+<div class="conbody">
+	<div class="headerCon">
+		<div class="header clearfix">
+			<div class="logoCon">
+				<img src="#" class="logo" alt="迎天下,logo"/>
+			</div>
+			<div class="header-title">入驻系统</div>
+			<a href="#" class="header-userCenter">商家中心</a>
+		</div>
+	</div>
+	<div class="stepCon">
+		<div class="stepLine">
+			<div class="step-one step-all">
+				<p class="step-num step-already">1</p>
+				<div class="step-text">入驻须知</div>
+			</div>
+			<div class="step-two step-all">
+				<p class="step-num step-already">2</p>
+				<div class="step-text">信息提交</div>
+			</div>
+			<div class="step-three step-all">
+				<p class="step-num">3</p>
+				<div class="step-text">等待审核</div>
+			</div>
+			<div class="step-four step-all">
+				<p class="step-num">4</p>
+				<div class="step-text">保证金缴纳</div>
+			</div>
+			<div class="step-five step-all">
+				<p class="step-num">5</p>
+				<div class="step-text">入驻成功</div>
+			</div>
+			<div class="step-curLine step-curline-two"></div>
+		</div>
+	</div>
+	<div class="mainCon clearfix">
+		<div class="leftSidebar">
+			<p class="leftSidebar-title">信息提交</p>
+			<a href="#" class="sidebarLink">店铺信息</a>
+			<span class="sidebar-position">店铺申请信息</span>
+			<span class="sidebar-position">店铺负责人信息</span>
+			<a href="#" class="sidebarLink">品牌资质</a>
+			<a href="#" class="sidebarLink yellow">公司资质</a>
+			<span class="sidebar-position">公司营业执照</span>
+			<span class="sidebar-position">组织机构代码证</span>
+			<span class="sidebar-position">税务登记证</span>
+			<span class="sidebar-position">开户许可证</span>
+		</div>
+		<div class="mainContent">
+            <!--@thymesVar id="companyBankVO" type="com.ytx.seller.web.vo.CompanyBankVO"-->
+            <form id="form" action="#" th:object="${companyBankVO}" th:action="@{/companyAuth/save}" method="post" enctype="multipart/form-data">
+			<div class="rightContent">
+				<h2 class="rightContent-title">公司营业执照信息<span class="rightContent-title-desc">以下所需要上传电子版仅支持JPG,GIF,PNG格式的图片，大小不超过1MB</span></h2>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>公司名称：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" id="companyName" th:field="*{companyAuth.companyName}" name="companyName"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>工商营业执照注册号：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" id="licRegNum" name="licRegNum" th:field="*{companyAuth.licRegNum}"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>法定代表人姓名：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" id="legal" name="legal" th:field="*{companyAuth.legal}"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>身份证号：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" id="legalCert" name="legalCert" th:field="*{companyAuth.legalCert}"/>
+
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>法人身份证电子版（正面）：</dt>
+					<dd class="form-content">
+						<div class="form-imgMain">
+							<div class="form-imgCon">
+								<img id="legalCertImgFrontImg" th:src="@{*{companyAuth.legalCertImgFront==null||companyAuth.legalCertImgFront==''}?'/static/images/formBg.png':'http://ytx-images.oss-cn-hangzhou.aliyuncs.com'+*{companyAuth.legalCertImgFrontImg}}"  class="form-img"/>
+							</div>
+                            <input type="file" id="legalCertImgFront" onchange="preImg('legalCertImgFront')" name="legalCertImgFront"  style="display: none"/>
+							<div class="form-img-submit" onclick="clickUp('legalCertImgFront')">上传图片</div>
+							<input type="text" id="legalCertImgFront_hidden" name="legalCertImgFront_hidden" style="visibility:hidden;" />
+						</div>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>法人身份证电子版（反面）：</dt>
+					<dd class="form-content">
+						<div class="form-imgMain">
+							<div class="form-imgCon">
+								<img id="legalCertImgOppoImg"  th:src="@{*{companyAuth.legalCertImgOppo==null||companyAuth.legalCertImgOppo==''}?'/static/images/formBg.png':'http://ytx-images.oss-cn-hangzhou.aliyuncs.com'+*{companyAuth.legalCertImgOppoImg}}" class="form-img"/>
+							</div>
+                            <input type="file" id="legalCertImgOppo" name="legalCertImgOppo" onchange="preImg('legalCertImgOppo')"  style="display: none"/>
+							<div class="form-img-submit" onclick="clickUp('legalCertImgOppo')">上传图片</div>
+							<input type="text" id="legalCertImgOppo_hidden" name="legalCertImgOppo_hidden" style="visibility:hidden;" />
+						</div>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>营业执照所在地：</dt>
+					<dd class="form-content">
+						<select class="form-select form-select-75" name="licProvinceCode">
+							<option value="" >请选择</option>
+						</select>
+						<select class="form-select form-select-75" name="licCityCode">
+							<option value="">请选择</option>
+						</select>
+						<select class="form-select form-select-75" name="licAreaCode">
+							<option value="">请选择</option>
+						</select>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>详细地址：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input form-input-255" name="licAddress" />
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>成立日期：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="buildDate" id="dealDate" th:field="*{companyAuth.buildDate}"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>营业执照期限：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input form-input-110" name="licStartDate" id="timeStart" th:field="*{companyAuth.licStartDate}"/>
+						<div class="form-line"></div>
+						<input type="text" class="form-input form-input-110" name="licEndDate" id="timeEnd" th:field="*{companyAuth.licEndDate}"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>注册资本：</dt>
+					<dd class="form-content">
+						<div class="form-nofloat">
+							<input type="text" class="form-input-nofloat" style="margin-left:0;" th:field="*{companyAuth.regCapital}" name="regCapital" />万元
+						</div>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>经营范围：</dt>
+					<dd class="form-content">
+						<div class="form-nofloat">
+							<input type="text" class="form-input" style="margin-left:0;" th:field="*{companyAuth.bizScopeDesc}" name="bizScopeDesc"/>
+							<span class="form-desc">（审核通过后将无法修改）</span>
+						</div>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>营业执照副本电子版：</dt>
+					<dd class="form-content">
+						<div class="form-imgMain">
+							<div class="form-imgCon">
+								<img id="LicImg"  th:src="@{*{companyAuth.LicImg==null||companyAuth.LicImg==''}?'/static/images/formBg.png':'http://ytx-images.oss-cn-hangzhou.aliyuncs.com'+*{companyAuth.LicImg}}" class="form-img"/>
+							</div>
+                            <input type="file" id="Lic" name="LicImg" onchange="preImg('Lic')" style="display: none"/>
+							<div class="form-submit-con clearfix">
+								<div class="form-img-submit form-float" onclick="clickUp('Lic')">上传图片</div>
+								<span class="form-desc form-float">（审核通过后将无法修改）</span>
+							</div>
+							<input type="text" id="LicImg_hidden" name="LicImg_hidden" style="visibility:hidden;" />
+						</div>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>公司所在地：</dt>
+					<dd class="form-content">
+						<select class="form-select form-select-75" name="companyProvinceCode">
+							<option value="">请选择</option>
+						</select>
+						<select class="form-select form-select-75" name="companyCityCode">
+							<option value="">请选择</option>
+						</select>
+						<select class="form-select form-select-75" name="companyAreaCode">
+							<option value="">请选择</option>
+						</select>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>公司详细地址：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input form-input-255" th:field="*{companyAuth.licAddress}" name="licAddress"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>公司电话：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="phone" th:field="*{companyAuth.phone}"/>
+					</dd>
+				</dl>
+				<h2 class="rightContent-title">组织机构代码证<span class="rightContent-title-desc">以下所需要上传电子版仅支持JPG,GIF,PNG格式的图片，大小不超过1MB</span></h2>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>组织机构代码：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="orgCodeCertNum" th:field="*{companyAuth.orgCodeCertNum}"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>营业执照副本电子版：</dt>
+					<dd class="form-content">
+						<div class="form-imgMain">
+							<div class="form-imgCon">
+								<img id="orgCodeCertImg" th:src="@{*{companyAuth.orgCodeCertImg==null||companyAuth.orgCodeCertImg==''}?'/static/images/formBg.png':'http://ytx-images.oss-cn-hangzhou.aliyuncs.com'+*{companyAuth.orgCodeCertImg}}" class="form-img"/>
+							</div>
+                            <input type="file" id="orgCodeCert" onchange="preImg('orgCodeCert')" name="orgCodeCertImg" style="display: none"/>
+							<div class="form-submit-con clearfix" >
+								<div class="form-img-submit form-float" onclick="clickUp('orgCodeCert')">上传图片</div>
+								<span class="form-desc form-float">（注：填入组织机构代码证电子版，加盖彩色公章）</span>
+							</div>
+							<input type="text" id="orgCodeCertImg_hidden" name="orgCodeCertImg_hidden" style="visibility:hidden;" />
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<div class="rightContent">
+				<h2 class="rightContent-title">税务登记证<span class="rightContent-title-desc">以下所需要上传电子版仅支持JPG,GIF,PNG格式的图片，大小不超过1MB</span></h2>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>税务登记号：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="taxRegCertNum" th:field="*{companyBank.taxRegCertNum}"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>纳税人类型：</dt>
+					<dd class="form-content">
+						<select class="form-select" name="taxRegType">
+							<option value="">请选择</option>
+						</select>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>税务登记证电子版：</dt>
+					<dd class="form-content">
+						<div class="form-imgMain">
+							<div class="form-imgCon">
+								<img id="taxRegCertImg" th:src="@{*{companyBank.taxRegCertImg==null||companyBank.taxRegCertImg==''}?'/static/images/formBg.png':'http://ytx-images.oss-cn-hangzhou.aliyuncs.com'+*{companyBank.taxRegCertImg}}" class="form-img"/>
+							</div>
+                            <input type="file" id="taxRegCert" name="taxRegCertImg" onchange="preImg('taxRegCert')" style="display: none"/>
+							<div class="form-img-submit" onclick="clickUp('taxRegCert')">上传图片</div>
+							<input type="text" id="taxRegCertImg_hidden" name="taxRegCertImg_hidden" style="visibility:hidden;" />
+						</div>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>一般纳税人资格证电子版：</dt>
+					<dd class="form-content">
+						<div class="form-imgMain">
+							<div class="form-imgCon">
+								<img id="generalTaxPayerCertImg" th:src="@{*{companyBank.generalTaxPayerCertImg==null||companyBank.generalTaxPayerCertImg==''}?'/static/images/formBg.png':'http://ytx-images.oss-cn-hangzhou.aliyuncs.com'+*{companyBank.generalTaxPayerCertImg}}" class="form-img"/>
+							</div>
+                            <input type="file" id="generalTaxPayerCert" onchange="preImg('generalTaxPayerCert')" name="generalTaxPayerCertImg" style="display: none"/>
+							<div class="form-img-submit" onclick="clickUp('generalTaxPayerCert')">上传图片</div>
+							<input type="text" id="generalTaxPayerCert_hidden" name="generalTaxPayerCert_hidden" style="visibility:hidden;" />
+						</div>
+					</dd>
+				</dl>
+				<h2 class="rightContent-title">开户行许可证<span class="rightContent-title-desc">以下所需要上传电子版仅支持JPG,GIF,PNG格式的图片，大小不超过1MB</span></h2>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>银行开户名：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="accountName" th:field="*{companyBank.accountName}"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>公司银行账户：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="bankAccount" th:field="*{companyBank.bankAccount}"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>开户行支行名称：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="subbranchBank" th:field="*{companyBank.subbranchBank}"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>开户银行支行联行号：</dt>
+					<dd class="form-content">
+						<input type="text" class="form-input" name="subbranchNum" th:field="*{companyBank.subbranchNum}"/>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>开户银行支行所在地：</dt>
+					<dd class="form-content">
+						<select class="form-select form-select-75" name="subbranchProvinceCode">
+							<option value="">请选择</option>
+						</select>
+						<select class="form-select form-select-75" name="subbranchCityCode">
+							<option value="">请选择</option>
+						</select>
+						<select class="form-select form-select-75" name="subbranchAreaCode">
+							<option value="">请选择</option>
+						</select>
+					</dd>
+				</dl>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>银行开户许可证电子版：</dt>
+					<dd class="form-content">
+						<div class="form-imgMain">
+							<div class="form-imgCon">
+								<img id="accountLicenseImg" th:src="@{*{companyBank.accountLicenseImg==null||companyBank.accountLicenseImg==''}?'/static/images/formBg.png':'http://ytx-images.oss-cn-hangzhou.aliyuncs.com'+*{companyBank.accountLicenseImg}}" class="form-img"/>
+							</div>
+                            <input type="file" id="accountLicense" name="accountLicenseImg" onchange="preImg('accountLicense')" style="display: none"/>
+							<div class="form-img-submit" onclick="clickUp('accountLicense')">上传图片</div>
+							<input type="text" id="accountLicense_hidden" name="accountLicense_hidden" style="visibility:hidden;" />
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<input type="submit" class="agreementBtn agreementBtn-active" id="agreementBtn" value="提交">
+            </form>
+		</div>
+	</div>
+</div>
+<script src="../static/js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/js/laydate.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/js/companyForm.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/js/jquery.validate-1.13.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/js/additional-methods.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
+<title>迎天下-用户-登录</title>
+<link rel="stylesheet" type="text/css" href="../../static/css/style.css"/>
+</head>
+<body>
+<div class="main-container">
+	<div class="login-container">
+		<div class="loginPage-logo"><img src="../../static/images/login_logo.png"/></div>
+		<div class="loginPage-section">
+			<div class="loginPage-banner">
+				<img src="../../static/images/login_banner.png"/>
+			</div>
+			<input type="hidden" th:value=${*{detail.area}} id="redirect"/>
+			<div class="loginPage-content">
+				<div class="loginMain">
+					<ul class="loginMain-tab-con clearfix" id="J_loginTab">
+						<li class="loginMain-tab active">微信登录</li>
+						<li class="loginMain-tab">账户密码登录</li>
+					</ul>
+					<ul class="loginMain-content-con" id="J_tabCon">
+						<li class="loginMain-content">
+							<div id="login_container"></div>
+							<p class="codeText">微信扫描 安全登录</p>
+							<p class="codeText small">使用<span class="themeColor">手机微信</span>扫描二维码</p>
+						</li>
+						<li class="loginMain-content" style="display:none;">
+							<div class="loginMain-password-login">
+								<div class="loginMain-con">
+									<input type="text" class="loginMain-input" placeholder="请输入账号（Email）" id="userName"/>
+									<i class="loginMain-icon username"></i>
+								</div>
+								<p class="loginMain-alert"></p>
+								<div class="loginMain-con">
+									<input type="text" class="loginMain-input" placeholder="请输入密码" id="passWord"/>
+									<i class="loginMain-icon password"></i>
+								</div>
+								<p class="loginMain-alert" id="J_alert"></p>
+								<div class="loginMain-Btn" id="J_login">登录</div>
+								<div class="login_action"><a href="#" class="loginMain-forgetPassword">忘记密码</a></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	!function(a,b){function d(a){var e,c=b.createElement("iframe"),d="https://open.weixin.qq.com/connect/qrconnect?appid="+a.appid+"&scope="+a.scope+"&redirect_uri="+a.redirect_uri+"&state="+a.state+"&login_type=jssdk";d+=a.style?"&style="+a.style:"",d+=a.href?"&href="+a.href:"",c.src=d,c.frameBorder="0",c.allowTransparency="true",c.scrolling="no",c.width="318px",c.height="180px",e=b.getElementById(a.id),e.innerHTML="",e.appendChild(c)}a.WxLogin=d}(window,document);
+</script>
+<script src="../../static/js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../static/js/loginPage.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

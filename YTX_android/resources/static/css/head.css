@@ -1,0 +1,39 @@
+.header-content{
+	height:45px;
+}
+.header{
+	overflow:hidden;
+	background:#333;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:10;
+}
+.header-left-controler,.header-title,.header-right-controler{
+	float:left;
+	height:45px;
+	line-height:45px;
+}
+.header-left-controler{
+	padding-left:3%;
+	width:15%;
+}
+.header-title{
+	width:64%;
+	font-size:18px;
+	text-align:center;
+	color:#fd9500;
+}
+.header-right-controler{
+	width:15%;
+	padding-right:3%;
+}
+.header-left-icon{
+	display:inline-block;
+	width:10px;
+	height:17px;
+	background:url(../images/back.png) no-repeat 0 0;
+	background-size:100%;
+	vertical-align:middle;
+}

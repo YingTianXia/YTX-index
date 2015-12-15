@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>迎天下-招商-品牌资质</title>
+<link rel="stylesheet" type="text/css" href="../static/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../static/css/laydate.css"/>
+<link rel="stylesheet" type="text/css" href="../static/css/laydate1.css"/>
+</head>
+<body>
+<div class="conbody">
+	<div class="headerCon">
+		<div class="header clearfix">
+			<div class="logoCon">
+				<img src="#" class="logo" alt="迎天下,logo"/>
+			</div>
+			<div class="header-title">入驻系统</div>
+			<a href="#" class="header-userCenter">商家中心</a>
+		</div>
+	</div>
+	<div class="stepCon">
+		<div class="stepLine">
+			<div class="step-one step-all">
+				<p class="step-num step-already">1</p>
+				<div class="step-text">入驻须知</div>
+			</div>
+			<div class="step-two step-all">
+				<p class="step-num step-already">2</p>
+				<div class="step-text">信息提交</div>
+			</div>
+			<div class="step-three step-all">
+				<p class="step-num">3</p>
+				<div class="step-text">等待审核</div>
+			</div>
+			<div class="step-four step-all">
+				<p class="step-num">4</p>
+				<div class="step-text">保证金缴纳</div>
+			</div>
+			<div class="step-five step-all">
+				<p class="step-num">5</p>
+				<div class="step-text">入驻成功</div>
+			</div>
+			<div class="step-curLine step-curline-two"></div>
+		</div>
+	</div>
+	<div class="mainCon clearfix">
+		<div class="leftSidebar">
+			<p class="leftSidebar-title">信息提交</p>
+			<a href="#" class="sidebarLink">店铺信息</a>
+			<span class="sidebar-position">店铺申请信息</span>
+			<span class="sidebar-position">店铺负责人信息</span>
+			<a href="#" class="sidebarLink yellow">品牌资质</a>
+			<a href="#" class="sidebarLink">公司资质</a>
+			<span class="sidebar-position">公司营业执照</span>
+			<span class="sidebar-position">组织机构代码证</span>
+			<span class="sidebar-position">税务登记证</span>
+			<span class="sidebar-position">开户许可证</span>
+		</div>
+		<div class="mainContent">
+			<div class="rightContent">
+				<h2 class="rightContent-title">品牌资质<span class="rightContent-title-desc">以下所需要上传电子版仅支持JPG,GIF,PNG格式的图片，大小不超过1MB</span></h2>
+				<dl class="form-list clearfix">
+					<dt class="form-name"><span class="yellow">* </span>品牌类型：</dt>
+					<dd class="form-content">
+						<select class="form-select" id="type" name="type">
+							<option class="form-option" value="self">自有</option>
+							<option class="form-option" value="agent">代理</option>
+						</select>
+					</dd>
+					<i class="confirm-icon"></i>
+				</dl>
+				<form id="form">
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>品牌名称：</dt>
+						<dd class="form-content">
+							<input id="name" name="name" type="text" class="form-input" />
+						</dd>
+						<i class="confirm-icon"></i>
+					</dl>
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>商标注册证号：</dt>
+						<dd class="form-content">
+							<input id="regCertNum" name="regCertNum" type="text" class="form-input" />
+						</dd>
+					</dl>
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>商标注册注册证/商标受理通知书复件：</dt>
+						<dd class="form-content">
+							<div class="form-imgMain">
+								<div class="form-imgCon">
+									<img id="regCertImg" src="../static/images/formBg.png" class="form-img"/>
+								</div>
+								<input type="file" id="regCertFile" name="regCertFile" style="display: none">
+								<div class="form-img-submit">上传图片</div>
+								<input type="text" id="regCertFile_hidden" name="regCertFile_hidden" style="visibility: hidden">
+							</div>
+						</dd>
+						<i class="confirm-icon"></i>
+					</dl>
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>检测报告：</dt>
+						<dd class="form-content">
+							<div class="form-imgMain">
+								<div class="form-imgCon">
+									<img id="qualityReportImg" src="../static/images/formBg.png" class="form-img"/>
+								</div>
+								<input type="file" id="qualityReportFile" name="qualityReportFile" style="display:none;">
+								<div class="form-img-submit">上传图片</div>
+								<input type="text" id="qualityReportFile_hidden" name="qualityReportFile_hidden" style="visibility: hidden">
+							</div>
+						</dd>
+						<i class="confirm-icon"></i>
+					</dl>
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>商标注册证复印件（加盖公章）：</dt>
+						<dd class="form-content">
+							<div class="form-imgMain">
+								<div class="form-imgCon">
+									<img id="applicationCertImg" src="../static/images/formBg.png" class="form-img"/>
+								</div>
+								<input type="file" id="logoRegFile" name="logoRegFile" style="display:none;">
+								<div class="form-img-submit">上传图片</div>
+								<input type="text" id="logoRegFile_hidden" name="logoRegFile_hidden" style="visibility: hidden">
+							</div>
+						</dd>
+					</dl>
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>有效期：</dt>
+						<dd class="form-content">
+							<input type="text" class="form-input form-input-110" id="timeStart" name="timeStart" />
+							<div class="form-line"></div>
+							<input type="text" class="form-input form-input-110" id="timeEnd" name="timeEnd" />
+						</dd>
+						<i class="confirm-icon"></i>
+					</dl>
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>品牌LOGO：</dt>
+						<dd class="form-content">
+							<div class="form-imgMain">
+								<div class="form-imgCon">
+									<img id="logoImg" src="../static/images/formBg.png" class="form-img"/>
+								</div>
+								<input type="file" id="logo" name="logo" style="display:none;">
+								<div class="form-img-submit">上传图片</div>
+								<input type="text" id="logo_hidden" name="logo_hidden" style="visibility: hidden">
+							</div>
+						</dd>
+						<i class="confirm-icon"></i>
+					</dl>
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>品牌介绍：</dt>
+						<dd class="form-content">
+							<textarea id="introduce" name="introduce" class="form-textarea" rows="4" ></textarea>
+						</dd>
+						<i class="confirm-icon"></i>
+					</dl>
+					<input type="submit" class="agreementBtn agreementBtn-active" id="agreementBtn" value="提交">
+				</form>
+				<form id="form1" style="display:none;">
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>品牌名称：</dt>
+						<dd class="form-content">
+							<input id="name1" name="name1" type="text" class="form-input" />
+						</dd>
+					</dl>
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>商标注册证号：</dt>
+						<dd class="form-content">
+							<input id="regCertNum1" name="regCertNum1" type="text" class="form-input" />
+						</dd>
+						<i class="confirm-icon"></i>
+					</dl>
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>商标注册注册证/商标受理通知书复件：</dt>
+						<dd class="form-content">
+							<div class="form-imgMain">
+								<div class="form-imgCon">
+									<img id="regCertImg" src="../static/images/formBg.png" class="form-img"/>
+								</div>
+	                            <input type="file" id="regCertFile1" name="regCertFile1" style="display: none">
+								<div class="form-img-submit">上传图片</div>
+								<input type="text" id="regCertFile_hidden1" name="regCertFile_hidden1" style="visibility: hidden">
+							</div>
+						</dd>
+						<i class="confirm-icon"></i>
+					</dl>
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>品牌授权书：</dt>
+						<dd class="form-content">
+							<div class="form-imgMain">
+								<div class="form-imgCon">
+									<img id="authImg" src="../static/images/formBg.png" class="form-img"/>
+								</div>
+                                <input type="file" id="authFile1" name="authFile1" style="display:none;">
+								<div class="form-img-submit">上传图片</div>
+								<input type="text" id="authFile1_hidden" name="authFile1_hidden" style="visibility: hidden;">
+							</div>
+						</dd>
+					</dl>
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>授权时间：</dt>
+						<dd class="form-content">
+							<input id="authStart" type="text" class="form-input form-input-110" name="authStart" />
+							<div class="form-line"></div>
+							<input id="authEnd" type="text" class="form-input form-input-110" name="authEnd" />
+						</dd>
+					</dl>
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>检测报告：</dt>
+						<dd class="form-content">
+							<div class="form-imgMain">
+								<div class="form-imgCon">
+									<img id="qualityReport" src="../static/images/formBg.png" class="form-img"/>
+								</div>
+								<input type="file" id="qualityReportFile" name="qualityReportFile" style="display:none;">
+								<div class="form-img-submit">上传图片</div>
+								<input type="text" id="qualityReportFile_hidden" name="qualityReportFile_hidden" style="visibility: hidden;">
+							</div>
+						</dd>
+					</dl>
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>商标注册证复印件（加盖公章）：</dt>
+						<dd class="form-content">
+							<div class="form-imgMain">
+								<div class="form-imgCon">
+									<img id="applicationCertImg" src="../static/images/formBg.png" class="form-img"/>
+								</div>
+                                <input type="file" id="applicationCertFile" style="display:none;">
+								<div class="form-img-submit">上传图片</div>
+								<input type="text" id="applicationCertFile_hidden" name="applicationCertFile_hidden" style="visibility: hidden;">
+							</div>
+						</dd>
+					</dl>
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>有效期：</dt>
+						<dd class="form-content">
+							<input id="validStart" type="text" class="form-input form-input-110" name="validStart" />
+							<div class="form-line"></div>
+							<input id="validEnd" type="text" class="form-input form-input-110" name="validEnd" />
+						</dd>
+					</dl>
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>品牌LOGO：</dt>
+						<dd class="form-content">
+							<div class="form-imgMain">
+								<div class="form-imgCon">
+									<img id="logo" src="../static/images/formBg.png" class="form-img"/>
+								</div>
+								<input type="file" id="logoFile" style="display:none;">
+								<div class="form-img-submit">上传图片</div>
+								<input type="text" id="logoFile_hidden" name="logoFile_hidden" style="visibility: hidden;">
+							</div>
+						</dd>
+					</dl>
+					<dl class="form-list clearfix">
+						<dt class="form-name"><span class="yellow">* </span>品牌介绍：</dt>
+						<dd class="form-content">
+							<textarea id="introduce1" class="form-textarea" rows="4" name="introduce1"></textarea>
+						</dd>
+					</dl>
+					<input id="checkStatus" type="hidden" name="checkStatus" value="010111010" th:value="*{checkStatus}"/>
+					<input type="submit" class="agreementBtn agreementBtn-active" id="agreementBtn1" value="提交">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="../static/js/laydate.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/js/jquery.validate-1.13.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/js/additional-methods.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/js/brand.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
